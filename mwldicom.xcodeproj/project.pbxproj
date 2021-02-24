@@ -154,6 +154,8 @@
 		4ABF11FF1FE89412000B8DE6 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		4ABF12001FE89412000B8DE6 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
 		4ABF12011FE89412000B8DE6 /* iconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconv.h; sourceTree = "<group>"; };
+		A5BC6FF925E6B78300DFA361 /* deploy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = deploy; sourceTree = "<group>"; };
+		A5BC6FFA25E6B79A00DFA361 /* TEST */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TEST; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,8 @@
 		2A31F5D91C87295A00A78C7C = {
 			isa = PBXGroup;
 			children = (
+				A5BC6FFA25E6B79A00DFA361 /* TEST */,
+				A5BC6FF925E6B78300DFA361 /* deploy */,
 				4A0FDF1F1E904E5C001E3426 /* main.m */,
 				4A0E60431E81C01B005D7F2B /* ODLog.h */,
 				4ABF11FA1FE6875B000B8DE6 /* DSCD */,
