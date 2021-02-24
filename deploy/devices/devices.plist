@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>2.16.858.0.2.16.86.9.0.0.2.214462250019</key>
+	<dict>
+		<key>preferredstudyidentificator</key>
+		<string>StudyInstanceUID</string>
+		<key>custodiantitle</key>
+		<string>BCBSU</string>
+		<key>custodianoid</key>
+		<string>2.16.858.0.2.16.86.9.0.0.2.214462250019</string>
+		<key>custodianglobaluri</key>
+		<string>http://192.168.15.200:11110</string>
+		<key>sqlprolog</key>
+		<string>export MYSQL_PWD=pacs;/usr/local/mysql/bin/mysql --raw --skip-column-names -upacs -h 127.0.0.1 -b pacsdb_arc -e &quot;</string>
+		<key>sqlstringencoding</key>
+		<string>5</string>
+		<key>sqlobjectmodel</key>
+		<string>dal5mysql</string>
+		<key>filesystemlocaluri</key>
+		<string></string>
+		<key>wadolocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/wado</string>
+		<key>wadoadditionalparameters</key>
+		<string>&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
+		<key>qidolocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs</string>
+		<key>wadorslocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs</string>
+		<key>stowjsonlocaluri</key>
+		<string></string>
+		<key>stowxmllocaluri</key>
+		<string></string>
+		<key>stowdicomlocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/studies</string>
+		<key>mwlitemlocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/mwlitems</string>
+		<key>patientslocaluri</key>
+		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/patients</string>
+		<key>dicomaet</key>
+		<string>BCBSU</string>
+		<key>dicomip</key>
+		<string>192.168.15.200</string>
+		<key>dicomport</key>
+		<string>11112</string>
+		<key>cfind</key>
+		<false/>
+		<key>cget</key>
+		<false/>
+		<key>cmove</key>
+		<false/>
+		<key>cstore</key>
+		<false/>
+		<key>ormlocaluri</key>
+		<string></string>
+		<key>orulocaluri</key>
+		<string></string>
+		<key>pidlocaluri</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

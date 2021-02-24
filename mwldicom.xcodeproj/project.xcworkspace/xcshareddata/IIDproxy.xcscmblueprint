@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bc781116-4e48-43d5-b8b6-0f4ab253a30f",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bc781116-4e48-43d5-b8b6-0f4ab253a30f" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bc781116-4e48-43d5-b8b6-0f4ab253a30f" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "05ADE99C-CB46-4E18-A2D6-BF6089A7588D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bc781116-4e48-43d5-b8b6-0f4ab253a30f" : "risa\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IIDproxy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/code\/pcs\/IIDproxy\/IIDproxy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn+ssh:\/\/190.64.48.21\/Users\/Shared\/svnroot\/risa",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bc781116-4e48-43d5-b8b6-0f4ab253a30f"
+    }
+  ]
+}
