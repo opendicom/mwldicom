@@ -13,7 +13,7 @@
 		<key>custodianglobaluri</key>
 		<string>http://192.168.15.200:11110</string>
 		<key>sqlprolog</key>
-		<string>export MYSQL_PWD=pacs;/usr/local/mysql/bin/mysql --raw --skip-column-names -upacs -h 127.0.0.1 -b pacsdb_arc -e &quot;</string>
+		<string>export MYSQL_PWD=pacs;/usr/local/mysql/bin/mysql --raw --skip-column-names -upacs -h 192.168.15.200 -b pacsdb_arc -e &quot;</string>
 		<key>sqlstringencoding</key>
 		<string>5</string>
 		<key>sqlobjectmodel</key>
@@ -21,23 +21,23 @@
 		<key>filesystemlocaluri</key>
 		<string></string>
 		<key>wadolocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/wado</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/wado</string>
 		<key>wadoadditionalparameters</key>
 		<string>&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
 		<key>qidolocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/rs</string>
 		<key>wadorslocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/rs</string>
 		<key>stowjsonlocaluri</key>
 		<string></string>
 		<key>stowxmllocaluri</key>
 		<string></string>
 		<key>stowdicomlocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/studies</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/rs/studies</string>
 		<key>mwlitemlocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/mwlitems</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/rs/mwlitems</string>
 		<key>patientslocaluri</key>
-		<string>http://127.0.0.1:8080/dcm4chee-arc/aets/BCBSU/rs/patients</string>
+		<string>http://192.168.15.200:8080/dcm4chee-arc/aets/BCBSU/rs/patients</string>
 		<key>dicomaet</key>
 		<string>BCBSU</string>
 		<key>dicomip</key>

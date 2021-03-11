@@ -465,7 +465,7 @@ int main(int argc, const char* argv[]) {
                      return [RSErrorResponse responseWithClientError:404 message:@"[[mwlitem] Content-Type:\"%@\" (should be either \"multipart/form-data\" or \"application/x-www-form-urlencoded\"",request.contentType];
                  
                  //verificar metadata
-//pacs
+#pragma mark pacs
                  NSUInteger pacsIndex=[names indexOfObject:@"pacs"];
                  if (pacsIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] pacs required"];
                  NSString *pacs=values[pacsIndex];
@@ -519,18 +519,18 @@ int main(int argc, const char* argv[]) {
                      cstore=entityDict[@"cstore"];
                  else return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] pacs '%@' doesn´t offer stow or store service",pacs];
 
-//aet
+#pragma mark aet
                  NSUInteger aetIndex=[names indexOfObject:@"aet"];
                  NSString *aet=nil;
                  if (aetIndex!=NSNotFound) aet=values[aetIndex];
 
-//Modality
+#pragma mark Modality
                  NSUInteger ModalityIndex=[names indexOfObject:@"Modality"];
                  if (ModalityIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] Modality required"];
                  NSString *Modality=values[ModalityIndex];
                  if ([@[@"CR",@"CT",@"MR",@"PT",@"XA",@"US",@"MG"] indexOfObject:Modality]==NSNotFound)  return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] Modality '%@', should be one of CR,CT,MR,PT,XA,US,MG",Modality];
                  
-//AccessionNumber
+#pragma mark AccessionNumber
                  NSUInteger AccessionNumberIndex=[names indexOfObject:@"AccessionNumber"];
                  if (AccessionNumberIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] AccessionNumber required"];
                  NSString *AccessionNumber=values[AccessionNumberIndex];
@@ -555,7 +555,7 @@ int main(int argc, const char* argv[]) {
                          
                  }
 
-//StudyDescription
+#pragma mark StudyDescription
                  NSUInteger StudyDescriptionIndex=[names indexOfObject:@"StudyDescription"];
                  if (StudyDescriptionIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] StudyDescription required"];
                  NSString *StudyDescription=values[StudyDescriptionIndex];
@@ -571,7 +571,7 @@ int main(int argc, const char* argv[]) {
                  if (!StudyDescriptionCode) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] code '%@' of code system '%@' not known",StudyDescriptionArray[0], StudyDescriptionArray[1]];
                  
                  
-//PatientName
+#pragma mark PatientName (apellido1, apellido2, nombres)
                  NSMutableString *PatientName=[NSMutableString string];
 
                  NSUInteger apellido1Index=[names indexOfObject:@"apellido1"];
@@ -583,12 +583,17 @@ int main(int argc, const char* argv[]) {
                  NSString *apellido2String=[values[apellido2Index] uppercaseString];
                  if (apellido2Index!=NSNotFound) [PatientName appendFormat:@">%@",apellido2String];
                  
+                 NSString *nombresString;
                  NSUInteger nombresIndex=[names indexOfObject:@"nombres"];
-                 NSString *nombresString=[values[nombresIndex] uppercaseString];
+                 if (nombresIndex!=NSNotFound)
+                 {
+                     nombresString=[values[nombresIndex] uppercaseString];
+                     [PatientName appendFormat:@"^%@",nombresString];
+                 }
+                 else nombresString=@"";
+                 
 
-                 if (nombresIndex!=NSNotFound) [PatientName appendFormat:@"^%@",nombresString];
-
-//PatientID
+#pragma mark PatientID
                  NSUInteger IDCountryIndex=[names indexOfObject:@"PatientIDCountry"];
                  if (IDCountryIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] 'PatientIDCountry' required"];
                  
@@ -627,13 +632,13 @@ int main(int argc, const char* argv[]) {
                  if (![SHRegex numberOfMatchesInString:values[PatientIDIndex] options:0 range:NSMakeRange(0,[PatientID length])]) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] PatientID should be > 1 and < 16 chars in length, without space, nor return, nor tab"];
                  
 
-//PatientBirthDate
+#pragma mark PatientBirthDate
                  NSUInteger PatientBirthDateIndex=[names indexOfObject:@"PatientBirthDate"];
                  if (PatientBirthDateIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] 'PatientBirthDate' required"];
                  NSString *PatientBirthdate=values[PatientBirthDateIndex];
                  if (![DARegex numberOfMatchesInString:PatientBirthdate options:0 range:NSMakeRange(0,[values[PatientBirthDateIndex] length])]) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] PatientBirthDate format should be aaaammdd"];
 
-//PatientSex
+#pragma mark PatientSex
                  NSUInteger PatientSexIndex=[names indexOfObject:@"PatientSex"];
                  if (PatientBirthDateIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] 'PatientSex' required"];
                  NSString *PatientSexValue=[values[PatientSexIndex]uppercaseString];
@@ -643,7 +648,7 @@ int main(int argc, const char* argv[]) {
                  else if ([PatientSexValue isEqualToString:@"O"])PatientSexSaluduyIndex=9;
                  else  return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] PatientSex should be 'M','F' or 'O'"];
 
-#pragma mark TODO Already exists in the PACS? Is coherent with patients found?
+#pragma mark - TODO Already exists in the PACS? Is coherent with patients found?
 
 //pid already exists in the PACS?
                  NSArray *pidInPacs=nil;
@@ -662,7 +667,7 @@ int main(int argc, const char* argv[]) {
                  }
                  if (!pidInPacs || [pidInPacs count]==0)
                  {
-                     //create patient
+#pragma mark PUT patient
                      NSString *URLString=[NSString stringWithFormat:@"%@/%@%%5E%%5E%%5E%@",
                                           patientslocaluri,
                                           PatientID,IssuerOfPatientID
@@ -698,17 +703,17 @@ int main(int argc, const char* argv[]) {
                      LOG_VERBOSE(@"[mwlitem] %@",[PUTpatientResponse description]);
                  }
 
-//now
+#pragma mark now
                  NSDate *now=[NSDate date];
                  
-//Priority
+#pragma mark Priority
                  NSString *Priority=nil;
                  if ([[values[[names indexOfObject:@"Priority"]] uppercaseString] isEqualToString:@"URGENT"])Priority=@"URGENT";
                  else Priority=@"MEDIUM";
 
                  
                  
-//create mwlitem
+#pragma mark - POST mwlitem
                  NSMutableURLRequest *POSTmwlitemRequest=
                  [NSMutableURLRequest
                   POSTmwlitem:mwlitemlocaluri
@@ -757,8 +762,7 @@ int main(int argc, const char* argv[]) {
                  
                  if (stowdicomlocaluri)
                  {
-
-                     //dscd object
+#pragma mark - dscd object
                      NSMutableString *dscd=[NSMutableString string];
                      [dscd appendDSCDprefix];
                      
@@ -811,7 +815,11 @@ int main(int argc, const char* argv[]) {
                      
                      NSString *enclosure=values[[names indexOfObject:@"enclosure"]];
                      
-                     if ([enclosure isEqualToString:@"pdf"])
+                     if (!enclosure)
+                     {
+                         LOG_VERBOSE(@"no 'enclosure'");
+                     }
+                     else if ([enclosure isEqualToString:@"pdf"])
                      {
                          NSString *enclosurePdf=values[[names indexOfObject:@"enclosurePdf"]];
                          if  (enclosurePdf && [enclosurePdf length]) [dscd appendUrlComponentWithPdf:enclosurePdf];
