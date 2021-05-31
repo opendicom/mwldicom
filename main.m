@@ -15,7 +15,14 @@
 #import "NSMutableURLRequest+PCS.h"
 #import "NSMutableString+DSCD.h"
 #import "NSUUID+DICM.h"
-
+#import "mllpClient.h"
+#import "ORMO01_231.h"
+#import "MSH.h"
+#import "OBR.h"
+#import "ORC.h"
+#import "PID.h"
+#import "PV1.h"
+#import "ZDS.h"
 
 //static immutable write
 static NSTimeInterval timeout=300;
@@ -253,90 +260,7 @@ int main(int argc, const char* argv[]) {
             //sql
             if (d[@"sqlobjectmodel"]) [sqlset addObject:d[@"sqlobjectmodel"]];
         }
-        //response data for root queries custodians/titles and custodians/oids
-        NSData *custodianOIDsData = [NSJSONSerialization dataWithJSONObject:[custodianoids allKeys] options:0 error:nil];
-        NSData *custodianTitlesData = [NSJSONSerialization dataWithJSONObject:[custodiantitles allKeys] options:0 error:nil];
 
-        
-        //devices OID classified by custodian
-        NSMutableDictionary *custodianOIDsaeis=[NSMutableDictionary dictionary];
-        for (NSString *custodianOID in [custodianoids allKeys])
-        {
-            NSMutableArray *custodianOIDaeis=[NSMutableArray array];
-            for (NSString *k in [entitiesDicts allKeys])
-            {
-                NSDictionary *d=[entitiesDicts objectForKey:k];
-                if ([[d objectForKey:@"custodianoid"]isEqualToString:custodianOID])[custodianOIDaeis addObject:k];
-            }
-            [custodianOIDsaeis setValue:custodianOIDaeis forKey:custodianOID];
-        }
-        LOG_VERBOSE(@"known devices OID classified by corresponding custodian OID:\r\n%@",[custodianOIDsaeis description]);
-
-        //devices titles grouped on custodian
-        NSMutableDictionary *custodianTitlesaets=[NSMutableDictionary dictionary];
-        NSMutableDictionary *custodianTitlesaetsStrings=[NSMutableDictionary dictionary];
-        for (NSString *custodianTitle in [custodiantitles allKeys])
-        {
-            NSMutableArray *custodianTitleaets=[NSMutableArray array];
-            NSMutableString *s=[NSMutableString stringWithString:@"("];
-
-            for (NSString *k in [entitiesDicts allKeys])
-            {
-                NSDictionary *d=[entitiesDicts objectForKey:k];
-                if ([[d objectForKey:@"custodiantitle"]isEqualToString:custodianTitle])
-                {
-                    [custodianTitleaets addObject:[d objectForKey:@"dicomaet"]];
-                    if ([s isEqualToString:@"("])
-                        [s appendFormat:@"'%@'",[d objectForKey:@"dicomaet"]];
-                    else [s appendFormat:@",'%@'",[d objectForKey:@"dicomaet"]];
-                }
-            }
-            [custodianTitlesaets setObject:custodianTitleaets forKey:custodianTitle];
-            [s appendString:@")"];
-            [custodianTitlesaetsStrings setObject:s forKey:custodianTitle];
-        }
-        LOG_VERBOSE(@"known devices aet classified by corresponding custodian title:\r\n%@",[custodianTitlesaets description]);
-
-        NSMutableDictionary *pacsTitlesDictionary=[NSMutableDictionary dictionary];
-        NSMutableArray *localOIDs=[NSMutableArray array];
-        NSDictionary *custodianDictionary=nil;
-        for (NSString *key in [entitiesDicts allKeys])
-        {
-            [pacsTitlesDictionary setObject:key forKey:[(entitiesDicts[key])[@"custodiantitle"] stringByAppendingPathExtension:(entitiesDicts[key])[@"dicomaet"]]];
-            
-            if ([(entitiesDicts[key])[@"local"] boolValue])
-            {
-                [localOIDs addObject:key];
-                if ([(entitiesDicts[key])[@"custodianoid"] isEqualToString:key]) custodianDictionary=entitiesDicts[key];
-            }
-        }
-        
-        
-        
-        //1.4 sql queries and sql qido filters
-        NSDictionary *datatables=[NSDictionary dictionaryWithContentsOfFile:[deployPath stringByAppendingPathComponent:@"objectmodel/datatables.plist"]];
-        NSDictionary *qido=[NSDictionary dictionaryWithContentsOfFile:[deployPath stringByAppendingPathComponent:@"objectmodel/qido.plist"]];
-        NSDictionary *qidokey=[NSDictionary dictionaryWithContentsOfFile:[deployPath stringByAppendingPathComponent:@"objectmodel/qidokey.plist"]];
-        NSDictionary *wadouris=[NSDictionary dictionaryWithContentsOfFile:[deployPath stringByAppendingPathComponent:@"objectmodel/wadouris.plist"]];
-        NSDictionary *weasis=[NSDictionary dictionaryWithContentsOfFile:[deployPath stringByAppendingPathComponent:@"objectmodel/weasis.plist"]];
-        if (
-               !datatables
-            || !qido
-            || !qidokey
-            || !wadouris
-            || !weasis
-            )
-        {
-            LOG_ERROR(@"lacks of one or more objectmodel plist");
-            return 1;
-        }
-
-        //create qido attribute index by tags
-        NSMutableDictionary *qidotag=[NSMutableDictionary dictionary];
-        for (NSString *key in qidokey)
-        {
-            [qidotag setObject:key forKey:((qidokey[key])[@"tag"])];
-        }
         
         LOG_VERBOSE(@"sqls:\r\n%@",[sqlset description]);
         NSMutableDictionary *sql=[NSMutableDictionary dictionary];
@@ -430,6 +354,7 @@ int main(int argc, const char* argv[]) {
 
                  
                  //data
+                 NSUUID *uuid=[NSUUID UUID];
                  NSURLComponents *urlComponents=[NSURLComponents componentsWithURL:request.URL resolvingAgainstBaseURL:NO];
                  LOG_DEBUG(@"[mwlitem] Path: %@",urlComponents.path);
                  LOG_DEBUG(@"[mwlitem] Query: %@",urlComponents.query);
@@ -472,17 +397,12 @@ int main(int argc, const char* argv[]) {
                  if (![UIRegex numberOfMatchesInString:pacs options:0 range:NSMakeRange(0,[pacs length])]) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] pacs '%@' should be an OID",pacs];
                  NSDictionary *entityDict=entitiesDicts[pacs];
                  if (!entityDict) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] pacs '%@' not known",pacs];
+                 
                  NSString *mwlitemlocaluri=nil;
+                 if ( entityDict[@"mwlitemlocaluri"] && [entityDict[@"mwlitemlocaluri"] length]) mwlitemlocaluri=entityDict[@"mwlitemlocaluri"];
+                 
                  NSString *ormlocaluri=nil;
-                 if (
-                        entityDict[@"mwlitemlocaluri"]
-                     && [entityDict[@"mwlitemlocaluri"] length])
-                     mwlitemlocaluri=entityDict[@"mwlitemlocaluri"];
-                 else if (
-                             entityDict[@"ormlocaluri"]
-                          && [entityDict[@"ormlocaluri"] length])
-                          ormlocaluri=entityDict[@"ormlocaluri"];
-                 else return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] pacs '%@' doesn´t offer mwlitem or orm service",pacs];
+                 if (entityDict[@"ormlocaluri"] && [entityDict[@"ormlocaluri"] length]) ormlocaluri=entityDict[@"ormlocaluri"];
                  
                  NSString *patientslocaluri=nil;
                  NSString *pidlocaluri=nil;
@@ -528,7 +448,7 @@ int main(int argc, const char* argv[]) {
                  NSUInteger ModalityIndex=[names indexOfObject:@"Modality"];
                  if (ModalityIndex==NSNotFound) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] Modality required"];
                  NSString *Modality=values[ModalityIndex];
-                 if ([@[@"CR",@"CT",@"MR",@"PT",@"XA",@"US",@"MG"] indexOfObject:Modality]==NSNotFound)  return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] Modality '%@', should be one of CR,CT,MR,PT,XA,US,MG",Modality];
+                 if ([@[@"CR",@"CT",@"MR",@"PT",@"XA",@"US",@"MG",@"DX"] indexOfObject:Modality]==NSNotFound)  return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] Modality '%@', should be one of CR,CT,MR,PT,XA,US,MG,DX",Modality];
                  
 #pragma mark AccessionNumber
                  NSUInteger AccessionNumberIndex=[names indexOfObject:@"AccessionNumber"];
@@ -565,10 +485,10 @@ int main(int argc, const char* argv[]) {
                  NSArray *StudyDescriptionArray=[StudyDescription componentsSeparatedByString:@"^"];
                  if ([StudyDescriptionArray count]!=3) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] StudyDescription format should be code^systemShortcut^[optional description]"];
                  
-                 NSDictionary *StudyDescriptionSystem=[codeDict objectForKey:StudyDescriptionArray[1]];
-                 if (!StudyDescriptionSystem) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] code system '%@' not known", StudyDescriptionArray[1]];
-                 NSDictionary *StudyDescriptionCode=[StudyDescriptionSystem objectForKey:StudyDescriptionArray[0]];
-                 if (!StudyDescriptionCode) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] code '%@' of code system '%@' not known",StudyDescriptionArray[0], StudyDescriptionArray[1]];
+                 NSDictionary *StudyDescriptionSystem=[codeDict objectForKey:StudyDescriptionArray[PROCSCHEME]];
+                 if (!StudyDescriptionSystem) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] code system '%@' not known", StudyDescriptionArray[PROCSCHEME]];
+                 NSDictionary *StudyDescriptionCode=[StudyDescriptionSystem objectForKey:StudyDescriptionArray[PROCCODE]];
+                 if (!StudyDescriptionCode) return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] code '%@' of code system '%@' not known",StudyDescriptionArray[PROCCODE], StudyDescriptionArray[1]];
                  
                  
 #pragma mark PatientName (apellido1, apellido2, nombres)
@@ -580,8 +500,13 @@ int main(int argc, const char* argv[]) {
                  [PatientName appendString:apellido1String];
                  
                  NSUInteger apellido2Index=[names indexOfObject:@"apellido2"];
-                 NSString *apellido2String=[values[apellido2Index] uppercaseString];
-                 if (apellido2Index!=NSNotFound) [PatientName appendFormat:@">%@",apellido2String];
+                 NSString *apellido2String=nil;
+                 if (apellido2Index != NSNotFound)
+                 {
+                     apellido2String=[values[apellido2Index] uppercaseString];
+                     [PatientName appendFormat:@">%@",apellido2String];
+                 }
+                 else apellido2String=@"";
                  
                  NSString *nombresString;
                  NSUInteger nombresIndex=[names indexOfObject:@"nombres"];
@@ -648,9 +573,8 @@ int main(int argc, const char* argv[]) {
                  else if ([PatientSexValue isEqualToString:@"O"])PatientSexSaluduyIndex=9;
                  else  return [RSErrorResponse responseWithClientError:404 message:@"[mwlitem] PatientSex should be 'M','F' or 'O'"];
 
-#pragma mark - TODO Already exists in the PACS? Is coherent with patients found?
+#pragma mark - Patient - TODO exists,coherent?
 
-//pid already exists in the PACS?
                  NSArray *pidInPacs=nil;
                  if (patientslocaluri)
                  {
@@ -703,13 +627,14 @@ int main(int argc, const char* argv[]) {
                      LOG_VERBOSE(@"[mwlitem] %@",[PUTpatientResponse description]);
                  }
 
+#pragma mark -
 #pragma mark now
                  NSDate *now=[NSDate date];
                  
 #pragma mark Priority
                  NSString *Priority=nil;
                  if ([[values[[names indexOfObject:@"Priority"]] uppercaseString] isEqualToString:@"URGENT"])Priority=@"URGENT";
-                 else Priority=@"MEDIUM";
+                 else Priority=@"URGENT";
 
                  
                  
@@ -762,7 +687,7 @@ int main(int argc, const char* argv[]) {
                  
                  if (stowdicomlocaluri)
                  {
-#pragma mark - dscd object
+#pragma mark dscd object
                      NSMutableString *dscd=[NSMutableString string];
                      [dscd appendDSCDprefix];
                      
@@ -811,21 +736,20 @@ int main(int argc, const char* argv[]) {
                                                      lowDA:[DICMTypes DAStringFromDate:now]
                                                     highDA:[DICMTypes DAStringFromDate:now]
                                                serviceCode:@"310125001"
-                                               serviceName:@"BCBSU CR PUNTA DEL ESTE"];
+                                               serviceName:[NSString stringWithFormat:@"%@ %@ %@",entityDict[@"custodianTitle"],Modality,aet]];
+                     NSUInteger encInt=[names indexOfObject:@"enclosure"];
                      
-                     NSString *enclosure=values[[names indexOfObject:@"enclosure"]];
-                     
-                     if (!enclosure)
+                     if (encInt==NSNotFound)
                      {
                          LOG_VERBOSE(@"no 'enclosure'");
                      }
-                     else if ([enclosure isEqualToString:@"pdf"])
+                     else if ([values[encInt] isEqualToString:@"pdf"])
                      {
                          NSString *enclosurePdf=values[[names indexOfObject:@"enclosurePdf"]];
                          if  (enclosurePdf && [enclosurePdf length]) [dscd appendUrlComponentWithPdf:enclosurePdf];
                          else [dscd appendEmptyComponent];
                      }
-                     else if ([enclosure isEqualToString:@"textarea"])
+                     else if ([values[encInt] isEqualToString:@"textarea"])
                      {
                          NSString *enclosureTextarea=values[[names indexOfObject:@"enclosureTextarea"]];
                         if  (enclosureTextarea && [enclosureTextarea length])
@@ -863,8 +787,8 @@ int main(int argc, const char* argv[]) {
                       issuer:IssuerOfPatientID
                       birthdate:(NSString *)PatientBirthdate
                       sex:PatientSexValue
-                      instanceUID:[[NSUUID UUID]ITUTX667UIDString]
-                      seriesUID:[[NSUUID UUID]ITUTX667UIDString]
+                      instanceUID:[[NSUUID UUID] ITUTX667UIDString]
+                      seriesUID:[uuid ITUTX667UIDString]
                       studyUID:AccessionNumber
                       seriesNumber:@"-32"
                       seriesDescription:@"Solicitud de informe imagenológico"
@@ -877,7 +801,7 @@ int main(int argc, const char* argv[]) {
                       ];
                      
                      
-                     //qido post stow
+#pragma mark qido post stow
                      [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?AccessionNumber=%@",mwlitemlocaluri,AccessionNumber]]];
 
                      LOG_VERBOSE(@"%@",[POSTenclosedRequest URL]);
@@ -925,10 +849,96 @@ int main(int argc, const char* argv[]) {
                      }
                      
                      
-                     
                      LOG_VERBOSE(@"[mwlitem] %@",[POSTenclosedResponse description]);
                      [html appendFormat:@"<p>solicitud dicom cda sent to %@</p>",stowdicomlocaluri];
 
+                     
+#pragma mark ormlocaluri
+                     
+                     NSString *ProcedureDescription;
+                     NSString *ReferringPhysician;
+                     if (aet)
+                     {
+                         if ([aet isEqualToString:@"BLUECARRETAS"])
+                         {
+                             ProcedureDescription=@"RADIOLOGIA DX";
+                             ReferringPhysician=@"BLUE CROSS OLIVA";
+                         }
+                         else if ([aet isEqualToString:@"FCR-CSL-SCU"])
+                         {
+                             ProcedureDescription=@"RADIOLOGIA DX";
+                             ReferringPhysician=@"BLUE CROSS PUNTA";
+                         }
+                         else
+                         {
+                             ProcedureDescription=@"ProcedureDescription1";
+                             ReferringPhysician=@"ReferringPhysician1";
+                         }
+                     }
+                     else
+                     {
+                         ProcedureDescription=@"ProcedureDescription2";
+                         ReferringPhysician=@"ReferringPhysician2";
+                     }
+                     
+                     NSDictionary *translation=StudyDescriptionCode[@"translation"];
+                     NSString *translationKey=([translation allKeys])[0];
+                     
+                     if (patientslocaluri)
+                     {
+NSString *ORM=[
+ ORMO01_231 singleSpsMSH_3:@"mwldicom"
+                     MSH_4:@"BCBSU"
+                     MSH_5:@"MIRTH"
+                     MSH_6:@"CIP"
+                     MSH_10:[uuid UUIDString]
+                     MSH_17:@"UY"
+                     MSH_18:4
+                     MSH_19:@"es"
+                     PID_3:PatientID
+                     PID_5:PatientName
+                     PID_7:PatientBirthdate
+                     PID_8:PatientSexValue
+                     PV1_8:ReferringPhysician
+                     ORC_2:AccessionNumber
+                     ORC_3:@""
+                     ORC_5:@""
+                     ORC_7:[DICMTypes DTStringFromDate:now]
+                     ORC_7_:@"A"
+                     ORC_17:ReferringPhysician
+                     OBR_4:[NSString stringWithFormat:@"%@^%@^%@^%@^%@^%@",
+                            StudyDescriptionArray[PROCCODE],
+                            StudyDescriptionArray[PROCMEANING],
+                            StudyDescriptionArray[PROCSCHEME],
+                            translationKey,
+                            StudyDescriptionArray[PROCMEANING],
+                            translation[translationKey]
+                            ]
+                     OBR_12:@""
+                     OBR_13:@""
+                     OBR_16:ReferringPhysician
+                     OBR_18:AccessionNumber
+                     OBR_19:AccessionNumber
+                     OBR_20:translationKey
+                     OBR_21:aet
+                     OBR_24:@"DX"
+                     OBR_30:@""
+                     OBR_31:@""
+                     OBR_32:@""
+                     OBR_34:@"PARADA, JOSE"
+                     OBR_44:ProcedureDescription
+                     ZDS_1:AccessionNumber
+               ];
+                         NSMutableString *payload=[NSMutableString string];
+ 
+                         [mllpClient sendPacs:entityDict
+                                      message:ORM
+                               stringEncoding:5
+                                      payload:payload ];
+                         NSLog(@"hl7snd: payload: %@",payload);
+
+                     }
+                     
                       /*
                      [html appendString:@"<dl>"];
                      for (int i=0; i < [names count]; i++)
@@ -962,129 +972,13 @@ int main(int argc, const char* argv[]) {
 
         
         
-#pragma mark echo
+#pragma mark - echo
         [httpdicomServer addHandler:@"GET" path:@"/echo" processBlock:
          ^(RSRequest* request, RSCompletionBlock completionBlock)
          {completionBlock(^RSResponse* (RSRequest* request){
             return [RSDataResponse responseWithText:[NSString stringWithFormat:@"[echo] your IP:port is %@", request.remoteAddressString]];
         }(request));}];
 
-        
-//-----------------------------------------------
-        
-
-#pragma mark custodians
-        NSRegularExpression *custodiansRegex = [NSRegularExpression regularExpressionWithPattern:@"^\\/custodians/.*$" options:0 error:NULL];
-        [httpdicomServer addHandler:@"GET" regex:custodiansRegex processBlock:
-         ^(RSRequest* request, RSCompletionBlock completionBlock)
-         {completionBlock(^RSResponse* (RSRequest* request){
-
-            //using NSURLComponents instead of RSRequest
-            NSURLComponents *urlComponents=[NSURLComponents componentsWithURL:request.URL resolvingAgainstBaseURL:NO];
-
-            NSArray *pComponents=[urlComponents.path componentsSeparatedByString:@"/"];
-            NSUInteger pCount=[pComponents count];
-             
-            if (pCount<3) return [RSErrorResponse responseWithClientError:400 message:@"%@ [no handler]",urlComponents.path];
-             
-             if ([pComponents[2]isEqualToString:@"titles"])
-             {
-                 //custodians/titles
-                 if (pCount==3) return [RSDataResponse responseWithData:custodianTitlesData contentType:@"application/json"];
-                 
-                 NSUInteger p3Length = [pComponents[3] length];
-                 if (  (p3Length>16)
-                     ||![SHRegex numberOfMatchesInString:pComponents[3] options:0 range:NSMakeRange(0,p3Length)])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{title} datatype should be DICOM SH]",urlComponents.path];
-                 
-                 if (!custodiantitles[pComponents[3]])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{title} not found]",urlComponents.path];
-                 
-                 //custodians/titles/{TITLE}
-                 if (pCount==4) return [RSDataResponse responseWithData:[NSJSONSerialization dataWithJSONObject:[NSArray arrayWithObject:custodiantitles[pComponents[3]]] options:0 error:nil] contentType:@"application/json"];
-                 
-                 if (![pComponents[4]isEqualToString:@"aets"])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{title} unique resource is 'aets']",urlComponents.path];
-                 
-                 //custodians/titles/{title}/aets
-                 if (pCount==5)
-                     return [RSDataResponse responseWithData:[NSJSONSerialization dataWithJSONObject:[custodianTitlesaets objectForKey:pComponents[3]] options:0 error:nil] contentType:@"application/json"];
-
-                 NSUInteger p5Length = [pComponents[5]length];
-                 if (  (p5Length>16)
-                     ||![SHRegex numberOfMatchesInString:pComponents[5] options:0 range:NSMakeRange(0,p5Length)])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{aet}datatype should be DICOM SH]",urlComponents.path];
-                 
-                 NSUInteger aetIndex=[[custodianTitlesaets objectForKey:pComponents[3]] indexOfObject:pComponents[5]];
-                 if (aetIndex==NSNotFound)
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{aet} not found]",urlComponents.path];
-
-                 if (pCount>6) return [RSErrorResponse responseWithClientError:400 message:@"%@ [no handler]",urlComponents.path];
-
-                 //custodians/titles/{title}/aets/{aet}
-                     return [RSDataResponse responseWithData:
-                             [NSJSONSerialization dataWithJSONObject:
-                              [NSArray arrayWithObject:(custodianOIDsaeis[custodiantitles[pComponents[3]]])[aetIndex]]
-                              options:0
-                              error:nil
-                             ]
-                             contentType:@"application/json"
-                            ];
-             }
-             
-             
-             if ([pComponents[2]isEqualToString:@"oids"])
-             {
-                 //custodians/oids
-                 if (pCount==3) return [RSDataResponse responseWithData:custodianOIDsData contentType:@"application/json"];
-                 
-                 NSUInteger p3Length = [pComponents[3] length];
-                 if (  (p3Length>64)
-                     ||![UIRegex numberOfMatchesInString:pComponents[3] options:0 range:NSMakeRange(0,p3Length)]
-                     )
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{OID} datatype should be DICOM UI]",urlComponents.path];
-                 
-                 if (!custodianoids[pComponents[3]])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{OID} not found]",urlComponents.path];
-                 
-                 //custodian/oids/{OID}
-                 if (pCount==4) return [RSDataResponse responseWithData:[NSJSONSerialization dataWithJSONObject:[NSArray arrayWithObject:custodianoids[pComponents[3]]] options:0 error:nil] contentType:@"application/json"];
-                 
-                 if (![pComponents[4]isEqualToString:@"aeis"])
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{OID} unique resource is 'aeis']",urlComponents.path];
-                 
-                 //custodian/oids/{OID}/aeis
-                 if (pCount==5)
-                     return [RSDataResponse responseWithData:[NSJSONSerialization dataWithJSONObject:[custodianOIDsaeis objectForKey:pComponents[3]] options:0 error:nil] contentType:@"application/json"];
-                 
-                 NSUInteger p5Length = [pComponents[5]length];
-                 if (  (p5Length>64)
-                     ||![UIRegex numberOfMatchesInString:pComponents[5] options:0 range:NSMakeRange(0,p5Length)]
-                     )
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{aei}datatype should be DICOM UI]",urlComponents.path];
-                 
-                 NSUInteger aeiIndex=[[custodianOIDsaeis objectForKey:pComponents[3]] indexOfObject:pComponents[5]];
-                 if (aeiIndex==NSNotFound)
-                     return [RSErrorResponse responseWithClientError:404 message:@"%@ [{aei} not found]",urlComponents.path];
-                 
-                 if (pCount>6) return [RSErrorResponse responseWithClientError:400 message:@"%@ [no handler]",urlComponents.path];
-                 
-                 //custodian/oids/{OID}/aeis/{aei}
-                 return [RSDataResponse responseWithData:
-                         [NSJSONSerialization dataWithJSONObject:
-                          [NSArray arrayWithObject:(entitiesDicts[pComponents[5]])[@"dicomaet"]]
-                                                         options:0
-                                                           error:nil
-                          ]
-                                                       contentType:@"application/json"
-                         ];
-             }
-             return [RSErrorResponse responseWithClientError:404 message:@"%@ [no handler]",urlComponents.path];
-
-        }(request));}];
-
-        
-//-----------------------------------------------
 
 #pragma mark -
 #pragma mark run
