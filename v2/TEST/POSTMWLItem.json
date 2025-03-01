@@ -1,0 +1,22 @@
+{
+    "modalidad": "US",
+    "sala": "ECO-3",
+    "AccessionNumber": "2196329.607062",
+    "issuerLocal": "IRP",
+    "issuerUniversal": "",
+    "issuerTipo": "",
+    "StudyDescription": "0404003^IRP^ECO ABDOMINAL",
+    "apellido1": "GOMEZ",
+    "apellido2": "NORAMBUENA",
+    "nombres": "STEFANY ALEJANDRA",
+    "PatientID": "17780766-4",
+    "PatientIDCountry": "CL",
+    "PatientIDType": "68909",
+    "clave": "HUqm1844",
+    "PatientBirthDate": "19910312",
+    "PatientSex": "F",
+    "Priority": "MEDIUM",
+    "ReferringPhysiciansName": "-^US^ANA PRADENAS                         PENAGOS ",
+    "NameofPhysicianReadingStudy": "IRP^US^",
+    "enclosurePdf": ""
+}

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <row>
+        <CodigoInterno>0401002  </CodigoInterno>
+        <Descripcion>Cavun Rinofaringeo</Descripcion>
+        <CodigoFonasa>0401002</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401009  </CodigoInterno>
+        <Descripcion>Torax ( Ap )</Descripcion>
+        <CodigoFonasa>0401009</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401009A </CodigoInterno>
+        <Descripcion>Torax (Lat)</Descripcion>
+        <CodigoFonasa>0401009</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401010  </CodigoInterno>
+        <Descripcion>Mamografia</Descripcion>
+        <CodigoFonasa>0401010</CodigoFonasa>
+        <EspecialidadCodigo>B3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Mamografías</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401013  </CodigoInterno>
+        <Descripcion>Abdomen Simple</Descripcion>
+        <CodigoFonasa>0401013</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401028  </CodigoInterno>
+        <Descripcion>Renal Simple</Descripcion>
+        <CodigoFonasa>0401028</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401029  </CodigoInterno>
+        <Descripcion>Vesical Simple</Descripcion>
+        <CodigoFonasa>0401029</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401031A </CodigoInterno>
+        <Descripcion>Cavidades Perinasales Orbita</Descripcion>
+        <CodigoFonasa>0401031</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401031B </CodigoInterno>
+        <Descripcion>Huesos Propios De La Nariz</Descripcion>
+        <CodigoFonasa>0401031</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401031C </CodigoInterno>
+        <Descripcion>Orbita, Maxilar, Malar</Descripcion>
+        <CodigoFonasa>0401031</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401032  </CodigoInterno>
+        <Descripcion>Craneo ( Ap - Lat )</Descripcion>
+        <CodigoFonasa>0401032</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401033  </CodigoInterno>
+        <Descripcion>Craneo Proyección Especial</Descripcion>
+        <CodigoFonasa>0401033</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401040  </CodigoInterno>
+        <Descripcion>Silla Turca ( Ap - Lat )</Descripcion>
+        <CodigoFonasa>0401040</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401042  </CodigoInterno>
+        <Descripcion>Columna Cervical (Ap - Lat)</Descripcion>
+        <CodigoFonasa>0401042</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401043  </CodigoInterno>
+        <Descripcion>Columna Cervical (Ap- Lat- Obl)</Descripcion>
+        <CodigoFonasa>0401043</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401044  </CodigoInterno>
+        <Descripcion>Columna Cervical Funcional</Descripcion>
+        <CodigoFonasa>0401044</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401045A </CodigoInterno>
+        <Descripcion>Columna Dorsal (Ap - Lat)</Descripcion>
+        <CodigoFonasa>0401045</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401045B </CodigoInterno>
+        <Descripcion>Parrilla Costal</Descripcion>
+        <CodigoFonasa>0401045</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401046  </CodigoInterno>
+        <Descripcion>Columna Lumbar 5° Espacio</Descripcion>
+        <CodigoFonasa>0401046</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401047  </CodigoInterno>
+        <Descripcion>Columna Lumbar Funcional</Descripcion>
+        <CodigoFonasa>0401047</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401048  </CodigoInterno>
+        <Descripcion>Columna Lumbar Oblicua</Descripcion>
+        <CodigoFonasa>0401048</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401049  </CodigoInterno>
+        <Descripcion>Columna Total (Ap - Lat) X 2</Descripcion>
+        <CodigoFonasa>0401049</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401049A </CodigoInterno>
+        <Descripcion>Columna Total Ap o Lat x1</Descripcion>
+        <CodigoFonasa>0401049</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401051  </CodigoInterno>
+        <Descripcion>Pelvis (Ap)</Descripcion>
+        <CodigoFonasa>0401051</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401052  </CodigoInterno>
+        <Descripcion>Lowestein</Descripcion>
+        <CodigoFonasa>0401052</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401053  </CodigoInterno>
+        <Descripcion>Sacrocoxis, Sacroiliacas</Descripcion>
+        <CodigoFonasa>0401053</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401054A </CodigoInterno>
+        <Descripcion>Pie </Descripcion>
+        <CodigoFonasa>0401054</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401054B </CodigoInterno>
+        <Descripcion>Brazo,Antebrazo,Codo,Mano,Muñeca,Dedo</Descripcion>
+        <CodigoFonasa>0401054</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401054C </CodigoInterno>
+        <Descripcion>Tobillo Ap y Lat</Descripcion>
+        <CodigoFonasa>0401054</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401055  </CodigoInterno>
+        <Descripcion>Clavicula</Descripcion>
+        <CodigoFonasa>0401055</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401056  </CodigoInterno>
+        <Descripcion>Edad Osea ( Mano )</Descripcion>
+        <CodigoFonasa>0401056</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401058  </CodigoInterno>
+        <Descripcion>Escafoides</Descripcion>
+        <CodigoFonasa>0401058</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401059A </CodigoInterno>
+        <Descripcion>Tobillo (Ap-Lat-Obli)</Descripcion>
+        <CodigoFonasa>0401059</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401059B </CodigoInterno>
+        <Descripcion>Muñeca (Ap- Lat- Obli)</Descripcion>
+        <CodigoFonasa>0401059</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401060A </CodigoInterno>
+        <Descripcion>Rodilla,Femur,Pierna</Descripcion>
+        <CodigoFonasa>0401060</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401060B </CodigoInterno>
+        <Descripcion>Esternon</Descripcion>
+        <CodigoFonasa>0401060</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401060C </CodigoInterno>
+        <Descripcion>Hombro</Descripcion>
+        <CodigoFonasa>0401060</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401062  </CodigoInterno>
+        <Descripcion>Proyecciones especiales oblicuas u otras axial</Descripcion>
+        <CodigoFonasa>0401062</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401063  </CodigoInterno>
+        <Descripcion>Tunel Intercondileo o Radio-Carpiano</Descripcion>
+        <CodigoFonasa>0401063</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401070  </CodigoInterno>
+        <Descripcion>Torax ( Ap - Lat )</Descripcion>
+        <CodigoFonasa>0401070</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401110  </CodigoInterno>
+        <Descripcion>Mamografia Unilateral</Descripcion>
+        <CodigoFonasa>0401110</CodigoFonasa>
+        <EspecialidadCodigo>B3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Mamografías</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401130  </CodigoInterno>
+        <Descripcion>Proyeccion Complementaria Magnificación Focalización</Descripcion>
+        <CodigoFonasa>0401130</CodigoFonasa>
+        <EspecialidadCodigo>B3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Mamografías</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0401151  </CodigoInterno>
+        <Descripcion>Pelvis (AP)</Descripcion>
+        <CodigoFonasa>0401151</CodigoFonasa>
+        <EspecialidadCodigo>A0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Radiografias</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403001  </CodigoInterno>
+        <Descripcion>Tac Cerebro</Descripcion>
+        <CodigoFonasa>0403001</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403002  </CodigoInterno>
+        <Descripcion>Tac Silla Turca e Hipófisis ( 20 Cortes 2Mm)</Descripcion>
+        <CodigoFonasa>0403002</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403003  </CodigoInterno>
+        <Descripcion>Tac Angulo Ponto Cerebeloso</Descripcion>
+        <CodigoFonasa>0403003</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403006  </CodigoInterno>
+        <Descripcion>Tac Temporal - Oido</Descripcion>
+        <CodigoFonasa>0403006</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403007  </CodigoInterno>
+        <Descripcion>Tac Orbitas Maxilofacial</Descripcion>
+        <CodigoFonasa>0403007</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403007A </CodigoInterno>
+        <Descripcion>Tac Cavidades Perinasales</Descripcion>
+        <CodigoFonasa>0403007</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403008  </CodigoInterno>
+        <Descripcion>Tac Columna Cervical</Descripcion>
+        <CodigoFonasa>0403008</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403012  </CodigoInterno>
+        <Descripcion>Tac Cuello, Partes Blandas</Descripcion>
+        <CodigoFonasa>0403012</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403013  </CodigoInterno>
+        <Descripcion>Tac Torax Total</Descripcion>
+        <CodigoFonasa>0403013</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403013A </CodigoInterno>
+        <Descripcion>Tac Torax - Abdómen y Pelvis</Descripcion>
+        <CodigoFonasa></CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403014  </CodigoInterno>
+        <Descripcion>Tac Abdomen </Descripcion>
+        <CodigoFonasa>0403014</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403016  </CodigoInterno>
+        <Descripcion>Tac Pelvis</Descripcion>
+        <CodigoFonasa>0403016</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403017  </CodigoInterno>
+        <Descripcion>Tac Extremidades Una o ambas</Descripcion>
+        <CodigoFonasa>0403017</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403018  </CodigoInterno>
+        <Descripcion>Tac Columna Dorsal</Descripcion>
+        <CodigoFonasa>0403018</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403019  </CodigoInterno>
+        <Descripcion>Tac Columna Lumbar</Descripcion>
+        <CodigoFonasa>0403019</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403020  </CodigoInterno>
+        <Descripcion>Tac Abdomen - Pelvis</Descripcion>
+        <CodigoFonasa>0403020</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403021  </CodigoInterno>
+        <Descripcion>Tac Pielo Tac</Descripcion>
+        <CodigoFonasa>0403021</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403022  </CodigoInterno>
+        <Descripcion>Tac Uro Tac</Descripcion>
+        <CodigoFonasa>0403022</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403101  </CodigoInterno>
+        <Descripcion>Angio Tac Cerebro</Descripcion>
+        <CodigoFonasa>0403101</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403102  </CodigoInterno>
+        <Descripcion>Angio Tac Tórax</Descripcion>
+        <CodigoFonasa>0403102</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403103  </CodigoInterno>
+        <Descripcion>Angio Tac Abdomen</Descripcion>
+        <CodigoFonasa>0403103</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403104  </CodigoInterno>
+        <Descripcion>Angio Tac Cuello</Descripcion>
+        <CodigoFonasa>0403104</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0403105  </CodigoInterno>
+        <Descripcion>Angio Tac Pelvis</Descripcion>
+        <CodigoFonasa>0403105</CodigoFonasa>
+        <EspecialidadCodigo>B2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Scanner</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404003  </CodigoInterno>
+        <Descripcion>Abdominal, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404003</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404005  </CodigoInterno>
+        <Descripcion>Transvaginal, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404005</CodigoFonasa>
+        <EspecialidadCodigo>A2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Ginecologicas</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404006  </CodigoInterno>
+        <Descripcion>Ginecologica, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404006</CodigoFonasa>
+        <EspecialidadCodigo>A2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Ginecologicas</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404006A </CodigoInterno>
+        <Descripcion>Obstétrica, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404006</CodigoFonasa>
+        <EspecialidadCodigo>A2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Ginecologicas</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404009  </CodigoInterno>
+        <Descripcion>Pelvica Masculina Prostática, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404009</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404010  </CodigoInterno>
+        <Descripcion>Renal, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404010</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404012  </CodigoInterno>
+        <Descripcion>Mamaria, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404012</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404014  </CodigoInterno>
+        <Descripcion>Testicular, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404014</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404015  </CodigoInterno>
+        <Descripcion>Tiroidea, Ecotomografia</Descripcion>
+        <CodigoFonasa>0404015</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404016  </CodigoInterno>
+        <Descripcion>Partes Blandas, Otras </Descripcion>
+        <CodigoFonasa>0404016</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404016A </CodigoInterno>
+        <Descripcion>Partes Blandas, Codo,Hombro,Rodilla,Tobillo </Descripcion>
+        <CodigoFonasa>0404016</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404016M </CodigoInterno>
+        <Descripcion>Partes Blandas, Muñeca</Descripcion>
+        <CodigoFonasa>0404016</CodigoFonasa>
+        <EspecialidadCodigo>A1</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Convencionales</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404019  </CodigoInterno>
+        <Descripcion>Carotideo y/o Vertebral, Doppler</Descripcion>
+        <CodigoFonasa>0404119</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404019G </CodigoInterno>
+        <Descripcion>Testicular, Doppler</Descripcion>
+        <CodigoFonasa>0404121</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404019H </CodigoInterno>
+        <Descripcion>Tiroideo, Doppler</Descripcion>
+        <CodigoFonasa></CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404118  </CodigoInterno>
+        <Descripcion>Arterial y/o Venoss Ext.Inf. Izq. y/o Der., Doppler</Descripcion>
+        <CodigoFonasa>0404118</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404118C </CodigoInterno>
+        <Descripcion>Venoso y/o Arterial Ext.Inf. Izq y/o Der., Doppler</Descripcion>
+        <CodigoFonasa>0404118</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404119A </CodigoInterno>
+        <Descripcion>Carotideo Doppler</Descripcion>
+        <CodigoFonasa>0404119</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404119I </CodigoInterno>
+        <Descripcion>Mamario, Doppler</Descripcion>
+        <CodigoFonasa></CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404121  </CodigoInterno>
+        <Descripcion>Abdominal, Doppler</Descripcion>
+        <CodigoFonasa>0404121</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404121A </CodigoInterno>
+        <Descripcion>Prostatico, Doppler</Descripcion>
+        <CodigoFonasa></CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404121B </CodigoInterno>
+        <Descripcion>Renal, Doppler</Descripcion>
+        <CodigoFonasa>0404121</CodigoFonasa>
+        <EspecialidadCodigo>A3</EspecialidadCodigo>
+        <EspecialidadDescripcion>Doppler </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0404122  </CodigoInterno>
+        <Descripcion>Obstetrico, Doppler</Descripcion>
+        <CodigoFonasa>0404122</CodigoFonasa>
+        <EspecialidadCodigo>A2</EspecialidadCodigo>
+        <EspecialidadDescripcion>Ecot. Ginecologicas</EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405001  </CodigoInterno>
+        <Descripcion>RMN Craneo-cerebro</Descripcion>
+        <CodigoFonasa>0405001</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405001A </CodigoInterno>
+        <Descripcion>RMN Oido</Descripcion>
+        <CodigoFonasa>0405001</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405002  </CodigoInterno>
+        <Descripcion>RMN Silla turca</Descripcion>
+        <CodigoFonasa>0405002</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405003  </CodigoInterno>
+        <Descripcion>RMN Orbitas</Descripcion>
+        <CodigoFonasa>0405003</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405003A </CodigoInterno>
+        <Descripcion>RMN Cavidades perinasales </Descripcion>
+        <CodigoFonasa>0405003</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405005  </CodigoInterno>
+        <Descripcion>RMN Columna cervical o cuello</Descripcion>
+        <CodigoFonasa>0405005</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405006  </CodigoInterno>
+        <Descripcion>RMN Columna dorsal</Descripcion>
+        <CodigoFonasa>0405006</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405007  </CodigoInterno>
+        <Descripcion>RMN Columna lumbar</Descripcion>
+        <CodigoFonasa>0405007</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405010  </CodigoInterno>
+        <Descripcion>RMN Abdomen total</Descripcion>
+        <CodigoFonasa>0405010</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405011  </CodigoInterno>
+        <Descripcion>RMN Pelvis o cadera c/u</Descripcion>
+        <CodigoFonasa>0405011</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405012  </CodigoInterno>
+        <Descripcion>RMN Abdomen-pelvis</Descripcion>
+        <CodigoFonasa>0405012</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405013  </CodigoInterno>
+        <Descripcion>RMN Rodilla c/u</Descripcion>
+        <CodigoFonasa>0405013</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405016  </CodigoInterno>
+        <Descripcion>RMN Columna total</Descripcion>
+        <CodigoFonasa>0405016</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405017  </CodigoInterno>
+        <Descripcion>RMN Angiografia de Encefalo</Descripcion>
+        <CodigoFonasa>0405017</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405018  </CodigoInterno>
+        <Descripcion>RMN Angiografía de Cuello</Descripcion>
+        <CodigoFonasa>0405018</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405024  </CodigoInterno>
+        <Descripcion>RMN Mano o Muñeca</Descripcion>
+        <CodigoFonasa>0405024</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405025  </CodigoInterno>
+        <Descripcion>RMN Antebrazo o Brazo</Descripcion>
+        <CodigoFonasa>0405025</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405026  </CodigoInterno>
+        <Descripcion>RMN Codo</Descripcion>
+        <CodigoFonasa>0405026</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405027  </CodigoInterno>
+        <Descripcion>RMN Hombro</Descripcion>
+        <CodigoFonasa>0405027</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405028  </CodigoInterno>
+        <Descripcion>RMN Pie, Antepie o Tobillo</Descripcion>
+        <CodigoFonasa>0405028</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405029  </CodigoInterno>
+        <Descripcion>RMN Pierna</Descripcion>
+        <CodigoFonasa>0405029</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405030  </CodigoInterno>
+        <Descripcion>RMN Muslo</Descripcion>
+        <CodigoFonasa>0405030</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405031  </CodigoInterno>
+        <Descripcion>RMN Mamaria Bilateral</Descripcion>
+        <CodigoFonasa>0405031</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0405098  </CodigoInterno>
+        <Descripcion>RMN Colangioresonancia</Descripcion>
+        <CodigoFonasa>0405098</CodigoFonasa>
+        <EspecialidadCodigo>C0</EspecialidadCodigo>
+        <EspecialidadDescripcion>Resonancias </EspecialidadDescripcion>
+    </row>
+    <row>
+        <CodigoInterno>0501134  </CodigoInterno>
+        <Descripcion>Densitometría Osea ( Cuerpo Entero)</Descripcion>
+        <CodigoFonasa>0501134</CodigoFonasa>
+        <EspecialidadCodigo>A6</EspecialidadCodigo>
+        <EspecialidadDescripcion>Estudios Dinamicos</EspecialidadDescripcion>
+    </row>
+</root>

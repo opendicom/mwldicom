@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist 
+    xmlns="http://www.opendicom.com/xsd/plist/code.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opendicom.com/xsd/plist/code.xsd ../code.xsd"
+    version="1.0"
+    >
+    <dict>
+        <key>7014001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX HUESOS FACIALES</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7022001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX SENOS FACIALES</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7024001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX SILLA TURCA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7026001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CRANEO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7036001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CUELLO (PARTES BLANDAS)</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7101001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX TORAX ( PARTES BLANDAS)</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7102001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX TORAX (F y P)</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7201001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX COLUMNA ENTERA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7204001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX COLUMNA CERVICAL</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7207001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX COLUMNA TORAXICA (DORSAL)</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7210001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX COLUMNA LUMBO - SACRA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7211001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX EST. COMPLEMENTARIOS c/ Placa MS,COLUMNA VERT.c/Placa</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7211050</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX EST.COMPLEMENTARIOS c/ PLACA MI</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7211401</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX EST. COMPLEMENTARIOS Perfil,de pie,acostado</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7217001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX PELVIS</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7300001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CLAVICULA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7301001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX ESCAPULA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7302001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX HOMBRO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7306001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX BRAZO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7307001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CODO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7309001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX ANTEBRAZO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7310001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX PUÑO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7312001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX MANO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7314001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX DEDOS</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7350001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CADERA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7351001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">METODO DE GREEN</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7355001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX FEMUR</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7356001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX RODILLA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7359001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX TIBIA Y PERONE</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7361501</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX TOBILLO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7362001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX PIE</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7400001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX ABDOMEN</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7423002</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">TRANSITO INTESTINO DELGADO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7423501</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">ESTUDIO DE LA DEGLUCION</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7447001</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX APARATO URINARIO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7697701</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">DENSITOMETRIA OSEA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7697750</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">DENSITOMETRIA OSEA PEDIATRICA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7101002</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX TRAQUEA</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7036002</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX CUELLO PERFIL</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7424604</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX GASTRODUODENO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+        <key>7424605</key>
+        <dict>
+            <key>scheme</key>
+            <integer>1</integer>
+            <key>meaning</key>
+            <string id="meaning">RX ESOFAGO</string>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category"/>
+            <key>uri</key>
+            <string id="uri"/>
+            <key>translation</key>
+            <dict/>
+        </dict>
+    </dict>
+</plist>

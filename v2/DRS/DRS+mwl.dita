@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xff_dkb_4db">
+    <title>mwlitem</title>
+    <body>
+        <p>Basic modality worklist is a great way to improve patient identification since the
+            identity comes directly from the master patient index and goes right into the image
+            modalities. The implementation in the modalities is mostly minimalist. So the mwl is not
+            a confiable vehicule for workflow metadata. There exists UPS and other standards for
+            that, but they make the logistics much more complicate. Moreover the other standards
+            don´t take into consideration the paper written order for study which is frequently
+            administratively amd diagnostically important.</p>
+        <p>This is why we use mwl es part of a broader documentational solution. Together with the
+            workitem, we issue a dicom cda document of solicitud request which can contain a pdf
+            scan of the written order. Moreover we send it to the PACS as the first document of the
+            study, so that the metadata there is straight since the beginning and the order is
+            always available together with the images.</p>
+        <p>The broader solution is implemented by means of a service of httpdicom called /mwlitem
+            which orchestrates verifications and registrations necessary for quality information
+            production. The  services orchestrated include:</p>
+        <p>
+            <ul id="ul_vt3_zmb_4db">
+                <li>study code verification</li>
+                <li>patient id verification or creation</li>
+                <li>AccessionNumber no duplication verification</li>
+                <li>Creeation of the item</li>
+                <li>Creation of user for online access to the study</li>
+            </ul>
+        </p>
+        <p>modalidad reemplaza Modality en la lista anterior. Es que en la nueva versión se va a
+            examinar en conjunto con sala, y en base a un archivo de mapeo permitirá definir los
+            valores correctos para los atributos DICOM ScheduledProcedureStepSequence.Modality y
+            ScheduledProcedureStepSequence.Scheduled StationAETitle. Se agregan campos para
+            caracterizar el AccessionNumber. Si es local se completa "issuerLocal" por ejemplo con
+            el valor "IRP" o el nombre de la institución solicitante, en caso que se copio en
+            AccessionNumber el numero de orden de servicio provisto por la institución
+            solicitante.Existe también la opción de calificar el issuer del accessionNumber en base
+            a un sistema nacional (por medio de OID, URL, etc). En este caso llenar
+            "IssuerUniversal" y "issuerTipo". Para issuerTipo los valores admitidos son :- DNS (An
+            Internet dotted name. Either in ASCII or as integers)- EUI64 (An IEEE Extended Unique
+            Identifier)- ISO (OID)- URI- UUID- X400- X500</p>
+    </body>
+</topic>

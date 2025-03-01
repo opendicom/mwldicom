@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <row>
+        <key>1</key>
+        <code>401013</code>
+        <displayname>ABDOMEN SIMPLE                                                        </displayname>
+        <shortname>ABDS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>2</key>
+        <code>401031</code>
+        <displayname>ATM                                                                   </displayname>
+        <shortname>ATM</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>3</key>
+        <code>401054</code>
+        <displayname>BRAZO                                                                 </displayname>
+        <shortname>BRA</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>4</key>
+        <code>401051</code>
+        <displayname>CADERA                                                                </displayname>
+        <shortname>CAD</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>5</key>
+        <code>401052</code>
+        <displayname>CADERA EXTRA                                                          </displayname>
+        <shortname>CADE</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>8</key>
+        <code>401054</code>
+        <displayname>CODO                                                                  </displayname>
+        <shortname>COD</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>11</key>
+        <code>401042</code>
+        <displayname>COLUMNA CERVICAL                                                      </displayname>
+        <shortname>CC</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>12</key>
+        <code>401044</code>
+        <displayname>COLUMNA CERVICAL FUNCIONALES                                          </displayname>
+        <shortname>CCF</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>13</key>
+        <code>401043</code>
+        <displayname>COLUMNA CERVICAL OBLICUAS                                             </displayname>
+        <shortname>CCO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>14</key>
+        <code>401045</code>
+        <displayname>COLUMNA DORSAL                                                        </displayname>
+        <shortname>CD</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>15</key>
+        <code>401045</code>
+        <displayname>COLUMNA DORSAL OBLICUAS                                               </displayname>
+        <shortname>CDO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>16</key>
+        <code>401045</code>
+        <displayname>COLUMNA DORSOLUMBAR                                                   </displayname>
+        <shortname>CDL</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>18</key>
+        <code>401046</code>
+        <displayname>COLUMNA LUMBOSACRA                                                    </displayname>
+        <shortname>CLS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>19</key>
+        <code>401048</code>
+        <displayname>COLUMNA LUMBOSACRA OBLICUAS                                           </displayname>
+        <shortname>CLSO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>20</key>
+        <code>401049</code>
+        <displayname>COLUMNA TOTAL O DORSOLUMBAR PANORAMICA                                </displayname>
+        <shortname>CT</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>22</key>
+        <code>401060</code>
+        <displayname>COSTILLAS                                                             </displayname>
+        <shortname>COS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>23</key>
+        <code>401031</code>
+        <displayname>CP                                                                    </displayname>
+        <shortname>CP</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>24</key>
+        <code>401032</code>
+        <displayname>CRANEO                                                                </displayname>
+        <shortname>CRA</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>25</key>
+        <code>401033</code>
+        <displayname>CRANEO EXTRA                                                          </displayname>
+        <shortname>CRAE</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>29</key>
+        <code>401060</code>
+        <displayname>ESTERNON                                                              </displayname>
+        <shortname>EST</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>31</key>
+        <code>401060</code>
+        <displayname>FEMUR                                                                 </displayname>
+        <shortname>FEM</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>32</key>
+        <code>401060</code>
+        <displayname>HOMBRO                                                                </displayname>
+        <shortname>HOM</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>33</key>
+        <code>401002</code>
+        <displayname>CAVUM, LARINGE                                                        </displayname>
+        <shortname>CVM</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>36</key>
+        <code>401054</code>
+        <displayname>MANO                                                                  </displayname>
+        <shortname>MAN</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>37</key>
+        <code>401056</code>
+        <displayname>MANO EDAD OSEA                                                        </displayname>
+        <shortname>MEO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>38</key>
+        <code>401031</code>
+        <displayname>MAXILAR INFERIOR                                                      </displayname>
+        <shortname>MXI</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>39</key>
+        <code>401031</code>
+        <displayname>MAXILAR SUPERIOR                                                      </displayname>
+        <shortname>MXS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>40</key>
+        <code>401054</code>
+        <displayname>MUÑECA                                                                </displayname>
+        <shortname>MUÑ</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>41</key>
+        <code>401031</code>
+        <displayname>NARIZ                                                                 </displayname>
+        <shortname>NAR</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>42</key>
+        <code>401035</code>
+        <displayname>OIDO                                                                  </displayname>
+        <shortname>OID</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>43</key>
+        <code>401031</code>
+        <displayname>ORBITA                                                                </displayname>
+        <shortname>ORB</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>44</key>
+        <code>401051</code>
+        <displayname>PELVIS                                                                </displayname>
+        <shortname>PEL</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>45</key>
+        <code>401054</code>
+        <displayname>PIE                                                                   </displayname>
+        <shortname>PIE</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>48</key>
+        <code>401060</code>
+        <displayname>PIERNA                                                                </displayname>
+        <shortname>PIER</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>49</key>
+        <code>401062</code>
+        <displayname>PROYECCION ESPECIAL                                                   </displayname>
+        <shortname>PE</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>50</key>
+        <code>401028</code>
+        <displayname>RENAL SIMPLE                                                          </displayname>
+        <shortname>RS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>51</key>
+        <code>401053</code>
+        <displayname>SACROCOXIS                                                            </displayname>
+        <shortname>SC</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>52</key>
+        <code>401053</code>
+        <displayname>SACROILIACAS                                                          </displayname>
+        <shortname>SI</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>53</key>
+        <code>401040</code>
+        <displayname>SILLA TURCA                                                           </displayname>
+        <shortname>ST</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>54</key>
+        <code>401054</code>
+        <displayname>TOBILLO                                                               </displayname>
+        <shortname>TOB</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>55</key>
+        <code>401009</code>
+        <displayname>TORAX SIMPLE                                                          </displayname>
+        <shortname>TXS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>57</key>
+        <code>401029</code>
+        <displayname>VESICAL SIMPLE                                                        </displayname>
+        <shortname>VS</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>68</key>
+        <code>401060</code>
+        <displayname>RODILLA                                                               </displayname>
+        <shortname>ROD</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>70</key>
+        <code>401070</code>
+        <displayname>TORAX AP-L                                                            </displayname>
+        <shortname>TXAPL</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>88</key>
+        <code>401047</code>
+        <displayname>COLUMNA LUMBOSACRA FUNCIONALES                                        </displayname>
+        <shortname>CLSF</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>264</key>
+        <code>401010</code>
+        <displayname>MAMOGRAFIAS                                                           </displayname>
+        <shortname>MAMO</shortname>
+        <modalidad>Mamografias</modalidad>
+    </row>
+    <row>
+        <key>344</key>
+        <code>401024</code>
+        <displayname>EED NIÑOS                                                             </displayname>
+        <shortname>EED</shortname>
+        <modalidad>Digestivo</modalidad>
+    </row>
+    <row>
+        <key>346</key>
+        <code>401057</code>
+        <displayname>EDAD OSEA RODILLA                                                     </displayname>
+        <shortname>EOR</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>347</key>
+        <code>401059</code>
+        <displayname>MUÑECA F-L OBLICUA                                                    </displayname>
+        <shortname>MTO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>348</key>
+        <code>401130</code>
+        <displayname>PLACA EXTRA MAMOGRAFIA C/U                                            </displayname>
+        <shortname>MPE</shortname>
+        <modalidad>Mamografias</modalidad>
+    </row>
+    <row>
+        <key>349</key>
+        <code>401063</code>
+        <displayname>TUNEL INTERCODILEO                                                    </displayname>
+        <shortname>TI</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>351</key>
+        <code>404019</code>
+        <displayname>ECO DOPPLER COLOR                                                     </displayname>
+        <shortname>EDOC</shortname>
+        <modalidad>Doppler</modalidad>
+    </row>
+    <row>
+        <key>352</key>
+        <code>1701045</code>
+        <displayname>ECOCARDIOGRAMA DOPPLER COLOR                                          </displayname>
+        <shortname>ECD</shortname>
+        <modalidad>Ecocardiograma</modalidad>
+    </row>
+    <row>
+        <key>353</key>
+        <code>404003</code>
+        <displayname>ECO ABDOMINAL                                                         </displayname>
+        <shortname>EA</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>354</key>
+        <code>404009</code>
+        <displayname>ECO PELVIANA MASCULI                                                  </displayname>
+        <shortname>EPM</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>355</key>
+        <code>404010</code>
+        <displayname>ECO RENAL BILATERAL                                                   </displayname>
+        <shortname>ER</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>357</key>
+        <code>404014</code>
+        <displayname>ECO TESTICULAR                                                        </displayname>
+        <shortname>ET</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>359</key>
+        <code>404006</code>
+        <displayname>ECO GINECOLOGICA                                                      </displayname>
+        <shortname>EG</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>368</key>
+        <code>401110</code>
+        <displayname>MAMOGRAFIA UNILATERAL                                                 </displayname>
+        <shortname>MAMOU</shortname>
+        <modalidad>Mamografias</modalidad>
+    </row>
+    <row>
+        <key>369</key>
+        <code>401027</code>
+        <displayname>PIELOGRAFIA                                                           </displayname>
+        <shortname>PIELO</shortname>
+        <modalidad>Pielos</modalidad>
+    </row>
+    <row>
+        <key>370</key>
+        <code>403001</code>
+        <displayname>CEREBRO                                                               </displayname>
+        <shortname>TC</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>386</key>
+        <code>1801001-3 </code>
+        <displayname>ENDOSCOPIA DIGESTIVA                                                  </displayname>
+        <shortname>EDA</shortname>
+        <modalidad>Endoscopias</modalidad>
+    </row>
+    <row>
+        <key>390</key>
+        <code>404015</code>
+        <displayname>ECO TIROIDEA                                                          </displayname>
+        <shortname>ETI</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>391</key>
+        <code>404016</code>
+        <displayname>ECO PARTES BLANDAS                                                    </displayname>
+        <shortname>EPB</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>393</key>
+        <code>404012</code>
+        <displayname>ECO MAMARIA                                                           </displayname>
+        <shortname>EM</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>395</key>
+        <code>401006</code>
+        <displayname>CAVIDADES CARDIACAS                                                   </displayname>
+        <shortname>CC</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>418</key>
+        <code>401060</code>
+        <displayname>EXTREMIDADES INFERIORES                                               </displayname>
+        <shortname>EI</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>423</key>
+        <code>801005</code>
+        <displayname>BIOPSIA                                                               </displayname>
+        <shortname>BPS</shortname>
+        <modalidad>Procedimientos</modalidad>
+    </row>
+    <row>
+        <key>426</key>
+        <code>401004</code>
+        <displayname>TORAX PLACA EXTRA                                                     </displayname>
+        <shortname>TXPE</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>428</key>
+        <code>401058</code>
+        <displayname>ESCAFOIDES                                                            </displayname>
+        <shortname>ESC</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>465</key>
+        <code>401014</code>
+        <displayname>ABDOMEN SIMPLE PROYECCION COMPLEMENTARIA                              </displayname>
+        <shortname>ABDPC</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>467</key>
+        <code>404005</code>
+        <displayname>ECO TRANSVAGINAL                                                      </displayname>
+        <shortname>ETV</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>468</key>
+        <code>404006</code>
+        <displayname>ECO OBSTETRICA                                                        </displayname>
+        <shortname>EO</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>469</key>
+        <code>401151</code>
+        <displayname>PELVIS LACTANTE O MENOR SEIS AÑOS                                     </displayname>
+        <shortname>PELÑ</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>470</key>
+        <code>401151</code>
+        <displayname>CADERA O COXOFEMORAL LACTANTE O MENOR SEIS AÑOS                       </displayname>
+        <shortname>CADÑ</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>471</key>
+        <code>404019</code>
+        <displayname>DOPPLER GINECOLOGICO                                                  </displayname>
+        <shortname>EDGINE</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>481</key>
+        <code>404006</code>
+        <displayname>ECO PELVIANA FEMENINA                                                 </displayname>
+        <shortname>EPF</shortname>
+        <modalidad>Ecos Simples</modalidad>
+    </row>
+    <row>
+        <key>485</key>
+        <code>404005</code>
+        <displayname>ECO TV OBSTETRICA                                                     </displayname>
+        <shortname>ETVO</shortname>
+        <modalidad>Ecos Especiales</modalidad>
+    </row>
+    <row>
+        <key>486</key>
+        <code>404119</code>
+        <displayname>ECO DOPPLER CAROTIDEO                                                 </displayname>
+        <shortname>EDC</shortname>
+        <modalidad>Doppler</modalidad>
+    </row>
+    <row>
+        <key>487</key>
+        <code>404118</code>
+        <displayname>ECO DOPPLER VASC VEN                                                  </displayname>
+        <shortname>ED</shortname>
+        <modalidad>Doppler</modalidad>
+    </row>
+    <row>
+        <key>488</key>
+        <code>404121</code>
+        <displayname>ECO DOPPLER ABDOMINAL O VASOS TESTICULAR                              </displayname>
+        <shortname>EDVT</shortname>
+        <modalidad>Doppler</modalidad>
+    </row>
+    <row>
+        <key>489</key>
+        <code>404122</code>
+        <displayname>ECO DOPPLER VASOS PLACENTARIOS                                        </displayname>
+        <shortname>EDVP</shortname>
+        <modalidad>Doppler</modalidad>
+    </row>
+    <row>
+        <key>490</key>
+        <code>405001</code>
+        <displayname>CEREBRO                                                               </displayname>
+        <shortname>RMCER</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>491</key>
+        <code>405002</code>
+        <displayname>SILLA TURCA                                                           </displayname>
+        <shortname>RMST</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>492</key>
+        <code>405003</code>
+        <displayname>ORBITAS                                                               </displayname>
+        <shortname>RMO</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>493</key>
+        <code>405003</code>
+        <displayname>MAXILOFACIAL                                                          </displayname>
+        <shortname>RNMX</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>494</key>
+        <code>405004</code>
+        <displayname>ART. TEMPOROMANDIBULAR                                                </displayname>
+        <shortname>RMAT</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>495</key>
+        <code>405005</code>
+        <displayname>COLUMNA CERVICAL                                                      </displayname>
+        <shortname>RMCC</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>496</key>
+        <code>405006</code>
+        <displayname>COLUMNA DORSAL                                                        </displayname>
+        <shortname>RMCD</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>497</key>
+        <code>405007</code>
+        <displayname>COLUMNA LUMBAR                                                        </displayname>
+        <shortname>RMCL</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>498</key>
+        <code>405008</code>
+        <displayname>ANGIO CEREBRAL ARTERIAL Y VENOSA                                      </displayname>
+        <shortname>ANGIORM</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>499</key>
+        <code>405010</code>
+        <displayname>ABDOMEN TOTAL                                                         </displayname>
+        <shortname>RNA</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>500</key>
+        <code>405011</code>
+        <displayname>PELVIS SOLO OSEA                                                      </displayname>
+        <shortname>RMPEL</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>501</key>
+        <code>405012</code>
+        <displayname>ABDOMEN Y PELVIS                                                      </displayname>
+        <shortname>RNAP</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>502</key>
+        <code>405098</code>
+        <displayname>COLANGIORESONANCIA                                                    </displayname>
+        <shortname>COLANG</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>514</key>
+        <code>405200</code>
+        <displayname>FOSA POSTERIOR Y/U OIDOS                                              </displayname>
+        <shortname>FPOST</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>515</key>
+        <code>401055</code>
+        <displayname>CLAVICULA                                                             </displayname>
+        <shortname>CLA</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>517</key>
+        <code>405200</code>
+        <displayname>ANGULO PONTOCEREBELOSO                                                </displayname>
+        <shortname>RM APC</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>519</key>
+        <code>405200</code>
+        <displayname>RM SACROILIACA                                                        </displayname>
+        <shortname>RM SACRO</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>550</key>
+        <code>405016</code>
+        <displayname>RNM COL TOTA (C,D,L)                                                  </displayname>
+        <shortname>RM COL TOT</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>554</key>
+        <code>405013</code>
+        <displayname>RODILLA UNILATERAL                                                    </displayname>
+        <shortname>RMROD</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>556</key>
+        <code>405014</code>
+        <displayname>CUELLO                                                                </displayname>
+        <shortname>RMCU</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>558</key>
+        <code>405030</code>
+        <displayname>MUSLO                                                                 </displayname>
+        <shortname>RMMUSLO</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>561</key>
+        <code>401059</code>
+        <displayname>TOBILLO F-L OBLICUA                                                   </displayname>
+        <shortname>TFLO</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>562</key>
+        <code>405014</code>
+        <displayname>HOMBRO                                                                </displayname>
+        <shortname>RMH</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>563</key>
+        <code>405026</code>
+        <displayname>CODO                                                                  </displayname>
+        <shortname>RNCO</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>564</key>
+        <code>405029</code>
+        <displayname>PIERNA                                                                </displayname>
+        <shortname>RMPIERNA</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>565</key>
+        <code>405015</code>
+        <displayname>PIE                                                                   </displayname>
+        <shortname>RMPIE</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>566</key>
+        <code>405014</code>
+        <displayname>BRAZO                                                                 </displayname>
+        <shortname>RNB</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>567</key>
+        <code>405014</code>
+        <displayname>ESCAPULA                                                              </displayname>
+        <shortname>RNE</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>568</key>
+        <code>405014</code>
+        <displayname>ANTEBRAZO                                                             </displayname>
+        <shortname>RNA</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>569</key>
+        <code>405024</code>
+        <displayname>MUÑECA                                                                </displayname>
+        <shortname>RNMU</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>570</key>
+        <code>405014</code>
+        <displayname>MANO                                                                  </displayname>
+        <shortname>RNMA</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>571</key>
+        <code>405015</code>
+        <displayname>TOBILLO                                                               </displayname>
+        <shortname>RMTOB</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>572</key>
+        <code>4050200</code>
+        <displayname>CADERA                                                                </displayname>
+        <shortname>RMCAD</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>573</key>
+        <code>401010</code>
+        <displayname>MAMOGRAFIA BILATERAL                                                  </displayname>
+        <shortname>MAMO</shortname>
+        <modalidad>Mamografias</modalidad>
+    </row>
+    <row>
+        <key>574</key>
+        <code>401110</code>
+        <displayname>MAMOGRAFIA UNILAT                                                     </displayname>
+        <shortname>MU</shortname>
+        <modalidad>Mamografias</modalidad>
+    </row>
+    <row>
+        <key>576</key>
+        <code>401130</code>
+        <displayname>PROYEC. MAMA                                                          </displayname>
+        <shortname>PM</shortname>
+        <modalidad>Rayos</modalidad>
+    </row>
+    <row>
+        <key>578</key>
+        <code>403002</code>
+        <displayname>SILLA TURCA                                                           </displayname>
+        <shortname>TST</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>579</key>
+        <code>403003</code>
+        <displayname>ANGULO PONTOCEREBELO                                                  </displayname>
+        <shortname>TAP</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>580</key>
+        <code>403004</code>
+        <displayname>CORTES CORONALES (eliminado por FNS 01-2017)                          </displayname>
+        <shortname>TCC</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>581</key>
+        <code>403006</code>
+        <displayname>TEMPORAL OIDO                                                         </displayname>
+        <shortname>TTO</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>582</key>
+        <code>403007</code>
+        <displayname>ORBITAS MAXILOFACIAL                                                  </displayname>
+        <shortname>TOM</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>583</key>
+        <code>403008</code>
+        <displayname>COLUMNA CERVICAL                                                      </displayname>
+        <shortname>TCC</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>584</key>
+        <code>403009</code>
+        <displayname>COLUMNA DORSAL O LUM                                                  </displayname>
+        <shortname>TCD</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>585</key>
+        <code>403010</code>
+        <displayname>ESP. ADICIONAL (eliminado por FNS 01-2017)                            </displayname>
+        <shortname>EA</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>586</key>
+        <code>403012</code>
+        <displayname>CUELLO, PARTES BLAN                                                   </displayname>
+        <shortname>TCPB</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>587</key>
+        <code>403013</code>
+        <displayname>TORAX TOTAL                                                           </displayname>
+        <shortname>TT</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>588</key>
+        <code>403014</code>
+        <displayname>ABDOMEN                                                               </displayname>
+        <shortname>TA</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>589</key>
+        <code>403016</code>
+        <displayname>PELVIS                                                                </displayname>
+        <shortname>TP</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>590</key>
+        <code>403017</code>
+        <displayname>EXTREMIDADES EST LOC                                                  </displayname>
+        <shortname>TE</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>592</key>
+        <code>403101</code>
+        <displayname>ANGIOTAC CEREBRO                                                      </displayname>
+        <shortname>AG</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>593</key>
+        <code>403103</code>
+        <displayname>ANGIOTAC ABDOMEN                                                      </displayname>
+        <shortname>AA</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>594</key>
+        <code>403014</code>
+        <displayname>PIELOTAC                                                              </displayname>
+        <shortname>PT</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>629</key>
+        <code>501134</code>
+        <displayname>DENSITOMETRIA OSEA (verif. datos)                                     </displayname>
+        <shortname>DO</shortname>
+        <modalidad>Densitometria</modalidad>
+    </row>
+    <row>
+        <key>749</key>
+        <code>403007</code>
+        <displayname>CAVIDADES PERINASALE                                                  </displayname>
+        <shortname>TCP</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>752</key>
+        <code>403104</code>
+        <displayname>ANGIO TAC CUELLO                                                      </displayname>
+        <shortname>ATC</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>761</key>
+        <code>403018</code>
+        <displayname>COLUMNA DORSAL                                                        </displayname>
+        <shortname>TCD</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>762</key>
+        <code>403019</code>
+        <displayname>COLUMNA LUMBAR                                                        </displayname>
+        <shortname>TCL</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>763</key>
+        <code>403020</code>
+        <displayname>ABDOMEN PELVIS                                                        </displayname>
+        <shortname>TABDPEL</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>765</key>
+        <code>403105</code>
+        <displayname>ANGIOTAC PELVIS                                                       </displayname>
+        <shortname>ATP</shortname>
+        <modalidad>TAC MC 1</modalidad>
+    </row>
+    <row>
+        <key>946</key>
+        <code>405018</code>
+        <displayname>ANGIORESONANCIA DE CUELLO                                             </displayname>
+        <shortname>ANCUELLO</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>947</key>
+        <code>405020</code>
+        <displayname>ANGIORESONANCIA ABDOMEN                                               </displayname>
+        <shortname>ANGIOABD</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>950</key>
+        <code>405021</code>
+        <displayname>ANGIORESONANCIA PELVIS                                                </displayname>
+        <shortname>AMGIOPEL</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>951</key>
+        <code>405022</code>
+        <displayname>ANGIORESONANCIA EXTREMIDAD  SUPERIOR  UNILATERAL                      </displayname>
+        <shortname>ANESUNI</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>952</key>
+        <code>405023</code>
+        <displayname>ANGIORESONANCIA EXTREMIDAD INFERIOR BILATERAL                         </displayname>
+        <shortname>ANEEIIBIL</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>953</key>
+        <code>405009</code>
+        <displayname>RESONANCIA MAGNETICA TORAX                                            </displayname>
+        <shortname>RMTX</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+    <row>
+        <key>954</key>
+        <code>405031</code>
+        <displayname>RESONANCIA MAGNETICA DE MAMA (BILATERAL)                              </displayname>
+        <shortname>RMMAMA</shortname>
+        <modalidad>Resonancia Magnetica</modalidad>
+    </row>
+</root>

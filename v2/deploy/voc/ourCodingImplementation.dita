@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_j2m_dlp_tdb">
+    <title>DICOM CODED ENTRY BASIC</title>
+    <body>
+        <p>Table C.7-3 General Study Module Attributes includes 00081032 SQ
+            <?oxy_custom_start type="oxy_content_highlight" color="166,89,220"?>ProcedureCodeSequence<?oxy_custom_end?>.
+            Allows for more than one item. Each of them represents an administrative procedure
+            step.</p>
+        <p>
+            <ul id="ul_f3z_tmp_tdb">
+                <li>00080100 SH
+                    <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>CodeValue<?oxy_custom_end?>
+                    (16 char max)</li>
+                <li>00080102 SH CodingSchemeDesignator (mandatory as complement to 00080100 or
+                    00080119)</li>
+                <li>00080103 SH CodingSchemeVersion</li>
+                <li>00080104 LO CodeMeaning</li>
+                <li>00080119 UC
+                    <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>LongCodeValue<?oxy_custom_end?></li>
+                <?oxy_custom_start type="oxy_content_highlight" color="140,255,140"?>
+                <li><?oxy_custom_end?>00080120 UR
+                    <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>URNCodeValue<?oxy_custom_end?></li>
+                <li>00080121 SQ
+                        <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>EquivalentCodeSequence<?oxy_custom_end?><ul
+                        id="ul_bxf_tpp_tdb">
+                        <li>00080100 SH
+                            <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>CodeValue<?oxy_custom_end?>
+                            (16 char max)</li>
+                        <li>00080102 SH CodingSchemeDesignator (mandatory as complement to 00080100
+                            or 00080119)</li>
+                        <li>00080103 SH CodingSchemeVersion</li>
+                        <li>00080104 LO CodeMeaning</li>
+                        <li>00080119 UC
+                            <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>LongCodeValue<?oxy_custom_end?></li>
+                        <?oxy_custom_start type="oxy_content_highlight" color="140,255,140"?>
+                        <li><?oxy_custom_end?>00080120 UR
+                            <?oxy_custom_start type="oxy_content_highlight" color="0,128,255"?>URNCodeValue<?oxy_custom_end?></li>
+                    </ul><p/></li>
+            </ul>
+        </p>
+        <section id="section_xnz_dqp_tdb">
+            <title>00321064 RequestedProcedureCodeSequence and 00400100
+                ScheduledProcedureStepSequence</title>
+            <p>0032164 codifies the title of the procedure found in 00320060.</p>
+            <p>0040008 codifies the title of the step found in 00400007</p>
+            <p>In most studies, there is only one step, so that procedure code and step code
+                overlap.</p>
+            <p>We decided :</p>
+            <p>
+                <ul id="ul_fpg_rtk_vdb">
+                    <li>To put all the administrative step codes at study level because it is
+                        usefull for qido study level purpose.<ul id="ul_ypz_15k_vdb">
+                            <li>Consequently, we ignore ScheduledProcedureStepSequence</li>
+                        </ul></li>
+                    <li>00320060 is free text for the procedure description. We use it in the
+                        workitem of the modality worklist CDA title and DICOM StudyDescription<ul
+                            id="ul_rdt_35k_vdb">
+                            <li>00320060  can contain a coded string code^scheme^meaning, which is
+                                can represent the code of the procedure asked for.<ul
+                                    id="ul_yxn_m5k_vdb">
+                                    <li>In this case, we find the one or more administrative codes
+                                        corresponding  to this procedure code and put the sequence
+                                        of them both in the CDA of "orden de servicio"object
+                                        (documentationOf/serviceEvent/code) and the metadata DICOM
+                                        of this object (00320064).</li>
+                                </ul></li>
+                        </ul></li>
+                </ul>
+            </p>
+        </section>
+    </body>
+</topic>

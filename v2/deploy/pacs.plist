@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist
+	xmlns="http://www.opendicom.com/xsd/plist/pacs.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opendicom.com/xsd/plist/pacs.xsd 
+	file:pacs.xsd"
+	>
+<dict>
+	<key>1.3.6.1.4.1.23650.152.0.2.738280</key><!-- todos los centros -->
+	<dict>
+		<key>preferredstudyidentificator</key>
+		<string id="preferredstudyidentificator">StudyInstanceUID</string>
+		<key>TimezoneOffsetFromUTC</key>
+		<string id="TimezoneOffsetFromUTC">-0300</string>
+		<key>pacstitle</key>
+		<string id="pacstitle">IRP</string>
+		<key>custodiantitle</key>
+		<string id="custodiantitle">IRP</string>
+		<key>custodianoid</key>
+		<string id="custodianoid">1.3.6.1.4.1.23650.152.0.2.738280</string>
+		<key>custodianglobaluri</key>
+		<string id="custodianglobaluri">http://10.0.0.110:11123</string>
+		<key>sqlprolog</key>
+		<string id="sqlprolog"></string>
+		<key>sqlstringencoding</key>
+		<string id="sqlstringencoding">5</string>
+		<key>sqlmap</key>
+		<string id="sqlmap"></string>
+		<key>filesystemlocaluri</key>
+		<string id="filesystemlocaluri"></string>
+		<key>wadolocaluri</key>
+		<string id="wadolocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/DCM4CHEE/wado</string>
+		<key>wadoadditionalparameters</key>
+		<string id="wadoadditionalparameters">&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
+		<key>dcm4cheelocaluri</key>
+		<string id="dcm4cheelocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/DCM4CHEE</string>
+		<key>headavailable</key>
+		<true/>
+		<key>dcm4cheedimseproxytitle</key>
+		<string id="dcm4cheedimseproxytitle"></string>
+		<key>cachepolicy</key>
+		<string id="cachepolicy">1</string>
+		<key>timeoutinterval</key>
+		<string id="timeoutinterval">60</string>
+		<key>html5dicomuserserviceuri</key>
+		<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+		<key>html5dicomuseractive</key>
+		<true/>
+	</dict>
+	<key>1.3.6.1.4.1.23650.152.0.2.738280.1</key><!-- Providencia -->
+	<dict>
+		<key>preferredstudyidentificator</key>
+		<string id="preferredstudyidentificator">StudyInstanceUID</string>
+		<key>TimezoneOffsetFromUTC</key>
+		<string id="TimezoneOffsetFromUTC">-0300</string>
+		<key>pacstitle</key>
+		<string id="pacstitle">IRP-PROV</string>
+		<key>custodiantitle</key>
+		<string id="custodiantitle">IRP</string>
+		<key>custodianoid</key>
+		<string id="custodianoid">1.3.6.1.4.1.23650.152.0.2.738280</string>
+		<key>custodianglobaluri</key>
+		<string id="custodianglobaluri">http://10.0.0.110:11115</string>
+		<key>sqlprolog</key>
+		<string id="sqlprolog"></string>
+		<key>sqlstringencoding</key>
+		<string id="sqlstringencoding">5</string>
+		<key>sqlmap</key>
+		<string id="sqlmap"></string>
+		<key>filesystemlocaluri</key>
+		<string id="filesystemlocaluri"></string>
+		<key>wadolocaluri</key>
+		<string id="wadolocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-PROV/wado</string>
+		<key>wadoadditionalparameters</key>
+		<string id="wadoadditionalparameters">&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
+		<key>dcm4cheelocaluri</key>
+		<string id="dcm4cheelocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-PROV</string>
+		<key>headavailable</key>
+		<true/>
+		<key>dcm4cheedimseproxytitle</key>
+		<string id="dcm4cheedimseproxytitle"></string>
+		<key>cachepolicy</key>
+		<string id="cachepolicy">1</string>
+		<key>timeoutinterval</key>
+		<string id="timeoutinterval">60</string>
+		<key>html5dicomuserserviceuri</key>
+		<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+		<key>html5dicomuseractive</key>
+		<true/>
+		<key>services</key>
+		<dict>
+			<key>Densit-1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">Densit-1</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">BMD</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Rayos-2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">NX_DRIRP</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Rayos-3</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">NX_DRIRP1</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Rayos-4</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">NXONW7</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Endos-5</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">Endos-5</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">ES</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Eco-6</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">HDI5000</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Eco-7</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">Eco-7</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Eco-8</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">HDI5000D</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Eco-9</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">HDI5000A</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Mamo-10</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">NX_IRP</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MG</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Mamo-11</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">NX_IRP1</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MG</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>Endos-12</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">Endos-12</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">ES</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>TAC-1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">MXV5565</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CT</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>TAC-2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">BRILLIANCEMC2</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CT</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECG-1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">ECG-1</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECO-1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">ECO-1</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECO-2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">ECO-2</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECG-2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">ECG-2</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECO-3</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">ECO-3</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>ECO-4</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">HD15000B</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">US</string>
+					<string id="modalities">EPS</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>RNM-1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">MR_STORE_IMP</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>RNM-2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">INTERA</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>1.3.6.1.4.1.23650.152.0.2.738280.2</key><!-- BB -->
+	<dict>
+		<key>preferredstudyidentificator</key>
+		<string id="preferredstudyidentificator">StudyInstanceUID</string>
+		<key>TimezoneOffsetFromUTC</key>
+		<string id="TimezoneOffsetFromUTC">-0300</string>
+		<key>pacstitle</key>
+		<string id="pacstitle">IRP-BB</string>
+		<key>custodiantitle</key>
+		<string id="custodiantitle">IRP</string>
+		<key>custodianoid</key>
+		<string id="custodianoid">1.3.6.1.4.1.23650.152.0.2.738280</string>
+		<key>custodianglobaluri</key>
+		<string id="custodianglobaluri">http://10.0.0.110:11115</string>
+		<key>sqlprolog</key>
+		<string id="sqlprolog"></string>
+		<key>sqlstringencoding</key>
+		<string id="sqlstringencoding">5</string>
+		<key>sqlmap</key>
+		<string id="sqlmap"></string>
+		<key>filesystemlocaluri</key>
+		<string id="filesystemlocaluri"></string>
+		<key>wadolocaluri</key>
+		<string id="wadolocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-BB/wado</string>
+		<key>wadoadditionalparameters</key>
+		<string id="wadoadditionalparameters">&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
+		<key>dcm4cheelocaluri</key>
+		<string id="dcm4cheelocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-BB</string>
+		<key>headavailable</key>
+		<true/>
+		<key>dcm4cheedimseproxytitle</key>
+		<string id="dcm4cheedimseproxytitle"></string>
+		<key>cachepolicy</key>
+		<string id="cachepolicy">1</string>
+		<key>timeoutinterval</key>
+		<string id="timeoutinterval">60</string>
+		<key>html5dicomuserserviceuri</key>
+		<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+		<key>html5dicomuseractive</key>
+		<true/>
+		<key>services</key>
+		<dict>
+			<key>MR1</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://ip:puerto/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">MR_MWL</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>MR2</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://ip:puerto/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">INTERA</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">MR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>1.3.6.1.4.1.23650.152.0.2.738280.3</key><!-- Los Heroes -->
+	<dict>
+		<key>preferredstudyidentificator</key>
+		<string id="preferredstudyidentificator">StudyInstanceUID</string>
+		<key>TimezoneOffsetFromUTC</key>
+		<string id="TimezoneOffsetFromUTC">-0300</string>
+		<key>pacstitle</key>
+		<string id="pacstitle">IRP-LH</string>
+		<key>custodiantitle</key>
+		<string id="custodiantitle">IRP</string>
+		<key>custodianoid</key>
+		<string id="custodianoid">1.3.6.1.4.1.23650.152.0.2.738280</string>
+		<key>custodianglobaluri</key>
+		<string id="custodianglobaluri">http://10.0.0.110:11115</string>
+		<key>sqlprolog</key>
+		<string id="sqlprolog"></string>
+		<key>sqlstringencoding</key>
+		<string id="sqlstringencoding">5</string>
+		<key>sqlmap</key>
+		<string id="sqlmap"></string>
+		<key>filesystemlocaluri</key>
+		<string id="filesystemlocaluri"></string>
+		<key>wadolocaluri</key>
+		<string id="wadolocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-LH/wado</string>
+		<key>wadoadditionalparameters</key>
+		<string id="wadoadditionalparameters">&amp;transferSyntax=1.2.840.10008.1.2.4.90</string>
+		<key>dcm4cheelocaluri</key>
+		<string id="dcm4cheelocaluri">http://127.0.0.1:8080/dcm4chee-arc/aets/IRP-LH</string>
+		<key>headavailable</key>
+		<true/>
+		<key>dcm4cheedimseproxytitle</key>
+		<string id="dcm4cheedimseproxytitle"></string>
+		<key>cachepolicy</key>
+		<string id="cachepolicy">1</string>
+		<key>timeoutinterval</key>
+		<string id="timeoutinterval">60</string>
+		<key>html5dicomuserserviceuri</key>
+		<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+		<key>html5dicomuseractive</key>
+		<true/>
+		<key>services</key>
+		<dict>
+			<key>CT Los Heroes</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">CT Los Heroes</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CT</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+			<key>CR 30-XM</key>
+			<dict>
+				<key>shortname</key>
+				<string id="shortname"></string>
+				<key>description</key>
+				<string id="description"></string>				
+				<key>location</key>
+				<string id="location"></string>
+				<key>html5dicomuserserviceuri</key>
+				<string id="html5dicomuserserviceuri">http://127.0.0.1/accounts/api/user</string>
+				<key>html5dicomuseractive</key>
+				<false/>
+				<key>StationAETitle</key>
+				<string id="StationAETitle">CR 30-XM</string>
+				<key>ip</key>
+				<string id="ip"></string>
+				<key>modalities</key>
+				<array>
+					<string id="modalities">CR</string>
+				</array>
+				<key>readingAsReferring</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.opendicom.com/xsd/plist/procedure.xsd"
+    xmlns="http://www.opendicom.com/xsd/plist/procedure.xsd" elementFormDefault="qualified"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+
+    <xs:element name="plist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dict">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="key" type="xs:positiveInteger"/>
+                            <xs:element name="dict">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="displayname"/>
+                                        <xs:group ref="shortname"/>
+                                        <xs:group ref="modality"/>
+                                        <xs:group ref="category"/>
+                                        <xs:group ref="code"/>
+                                        <xs:group ref="scheme"/>
+                                        <xs:group ref="qualifier"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" fixed="1.0"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="displayname">
+        <xs:sequence>
+            <xs:element name="key" fixed="displayname"/>
+            <xs:element ref="string" id="displayname"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="shortname">
+        <xs:sequence>
+            <xs:element name="key" fixed="shortname"/>
+            <xs:element ref="string" id="shortname"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="modality">
+        <xs:sequence>
+            <xs:element name="key" fixed="modality"/>
+            <xs:element ref="string" id="modality"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="category">
+        <xs:sequence>
+            <xs:element name="key" fixed="category"/>
+            <xs:element ref="string" id="category"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="code">
+        <xs:sequence>
+            <xs:element name="key" fixed="code"/>
+            <xs:element ref="string" id="code"/>
+        </xs:sequence>
+    </xs:group>
+
+
+    <xs:group name="scheme">
+        <xs:sequence>
+            <xs:element name="key" fixed="scheme"/>
+            <xs:element name="integer" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="qualifier">
+        <xs:sequence>
+            <xs:element name="key" fixed="qualifier"/>
+            <xs:element name="array">
+                <xs:complexType>
+                    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                        <xs:group ref="linkcode"/>
+                        <xs:group ref="linkscheme"/>
+                        <xs:group ref="qualifiercode"/>
+                        <xs:group ref="qualifierscheme"/>
+                        <xs:group ref="qualifier"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+
+    <xs:group name="qualifiercode">
+        <xs:sequence>
+            <xs:element name="key" fixed="qualifiercode"/>
+            <xs:element ref="string" id="qualifiercode"/>
+        </xs:sequence>
+    </xs:group>
+
+
+    <xs:group name="qualifierscheme">
+        <xs:sequence>
+            <xs:element name="key" fixed="qualifierscheme"/>
+            <xs:element name="integer" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="linkcode">
+        <xs:sequence>
+            <xs:element name="key" fixed="linkcode"/>
+            <xs:element ref="string" id="linkcode"/>
+        </xs:sequence>
+    </xs:group>
+
+
+    <xs:group name="linkscheme">
+        <xs:sequence>
+            <xs:element name="key" fixed="linkscheme"/>
+            <xs:element name="integer" type="xs:positiveInteger"/>
+        </xs:sequence>
+    </xs:group>
+
+
+    <!-- type polysemy -->
+
+    <xs:element name="string" type="idstring">
+        <xs:alternative test="@id = 'displayname'" type="idstring"/>
+        <xs:alternative test="@id = 'shortname'" type="titleidstring"/>
+        <xs:alternative test="@id = 'modality'" type="modality"/>
+        <xs:alternative test="@id = 'cagegory'" type="titleidstring"/>
+        <xs:alternative test="@id = 'code'" type="code"/>
+    </xs:element>
+
+    <xs:complexType name="idstring">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="titleidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="oididstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:pattern value="[1-2](\d)*(\.0|\.[1-9](\d)*)*"/>
+                <xs:maxLength value="64"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="httpidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:pattern value="()|(https?://.*)"/>
+                <xs:whiteSpace value="collapse"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="modality">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:enumeration value=""/>
+                <xs:enumeration value="CR"/>
+                <xs:enumeration value="DX"/>
+                <xs:enumeration value="XA"/>
+                <xs:enumeration value="CT"/>
+                <xs:enumeration value="MR"/>
+                <xs:enumeration value="MG"/>
+                <xs:enumeration value="US"/>
+                <xs:enumeration value="RF"/>
+                <xs:enumeration value="PT"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="code">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

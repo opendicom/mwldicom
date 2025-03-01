@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist
+ xmlns="http://www.opendicom.com/xsd/plist/scheme.xsd"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opendicom.com/xsd/plist/scheme.xsd file:scheme.xsd"
+    >
+    <dict>
+        <key>1</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid">2.16.840.1.113883.6.12</string>
+            <key>description</key>
+            <string id="description">American Medical Association's Current Procedure Terminology</string>
+            <key>version</key>
+            <string id="version">4 (CPT-4)</string>
+            <key>shortname</key>
+            <string id="shortname">CPT</string>
+            <key>hl7v2</key>
+            <string id="hl7v2"></string>
+            <key>dcm</key>
+            <string id="dcm">CPT</string>
+            <key>uri</key>
+            <string id="uri"></string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180423</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+        <key>2</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid">2.16.840.1.113883.6.82</string>
+            <key>description</key>
+            <string id="description">American Medical Association's Current Procedure Terminology</string>
+            <key>version</key>
+            <string id="version">5 (CPT-5)</string>
+            <key>shortname</key>
+            <string id="shortname"></string>
+            <key>hl7v2</key>
+            <string id="hl7v2"></string>
+            <key>dcm</key>
+            <string id="dcm">C5</string>
+            <key>uri</key>
+            <string id="uri"></string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180423</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+        <key>3</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid">2.16.858.0.2.16.86.9.0.0.2.214462250019</string>
+            <key>description</key>
+            <string id="description">Clínica Imagenológica Dres Parada</string>
+            <key>version</key>
+            <string id="version"></string>
+            <key>shortname</key>
+            <string id="shortname">CIP</string>
+            <key>hl7v2</key>
+            <string id="hl7v2"></string>
+            <key>dcm</key>
+            <string id="dcm"></string>
+            <key>uri</key>
+            <string id="uri"></string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180423</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+        <key>4</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid"></string>
+            <key>description</key>
+            <string id="description">CHILE FONASA - Modalidad de Atencion Institucional - Copagos</string>
+            <key>version</key>
+            <string id="version">2018</string>
+            <key>shortname</key>
+            <string id="shortname">MAI</string>
+            <key>hl7v2</key>
+            <string id="hl7v2">CHILE FONASA</string>
+            <key>dcm</key>
+            <string id="dcm">CHILE FONASA</string>
+            <key>uri</key>
+            <string id="uri">https://www.fonasa.cl/sites/fonasa/prestadores/normativa/aranceles</string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180423</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+        <key>5</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid"></string>
+            <key>description</key>
+            <string id="description">IRP</string>
+            <key>version</key>
+            <string id="version">2018</string>
+            <key>shortname</key>
+            <string id="shortname">IRP</string>
+            <key>hl7v2</key>
+            <string id="hl7v2"></string>
+            <key>dcm</key>
+            <string id="dcm"></string>
+            <key>uri</key>
+            <string id="uri"></string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180518</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+        <key>6</key>
+        <dict>
+            <key>oid</key>
+            <string id="oid"></string>
+            <key>description</key>
+            <string id="description">CDS</string>
+            <key>version</key>
+            <string id="version">2018</string>
+            <key>shortname</key>
+            <string id="shortname">CDS</string>
+            <key>hl7v2</key>
+            <string id="hl7v2"></string>
+            <key>dcm</key>
+            <string id="dcm"></string>
+            <key>uri</key>
+            <string id="uri"></string>
+            <key>active</key>
+            <true/>
+            <key>created</key>
+            <string id="created">20180518</string>
+            <key>retired</key>
+            <string id="retired"></string>
+        </dict>
+    </dict>
+</plist>

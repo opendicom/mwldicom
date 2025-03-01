@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.opendicom.com/xsd/plist/procedure.xsd"
+    xmlns="http://www.opendicom.com/xsd/plist/procedure.xsd" 
+    elementFormDefault="qualified"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+    >
+
+    <xs:element name="plist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dict">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="key" type="key"/>
+                            <xs:element name="dict">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="displayname"/>
+                                        <xs:group ref="shortname"/>
+                                        <xs:group ref="scheme"/>
+                                        <xs:group ref="modality"/>
+                                        <xs:group ref="category"/>
+                                        <xs:group ref="codes"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="oid" type="oidattribute"/>
+                        <xs:attribute name="title" type="titleattribute"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" fixed="1.0"/>
+            <xs:attribute name="object" fixed="procedure"/>
+            <xs:attribute name="objectversion" fixed="1.0"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="displayname">
+        <xs:sequence>
+            <xs:element name="key" fixed="displayname"/>
+            <xs:element ref="string" id="displayname"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="shortname">
+        <xs:sequence>
+            <xs:element name="key" fixed="shortname"/>
+            <xs:element ref="string" id="shortname"/>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="scheme">
+        <xs:sequence>
+            <xs:element name="key" fixed="scheme"/>
+            <xs:element name="integer" type="xs:integer"/>
+        </xs:sequence>
+    </xs:group>
+    
+    
+    <xs:group name="modality">
+        <xs:sequence>
+            <xs:element name="key" fixed="modality"/>
+            <xs:element ref="string" id="modality"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="category">
+        <xs:sequence>
+            <xs:element name="key" fixed="category"/>
+            <xs:element ref="string" id="category"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="codes">
+        <xs:sequence>
+            <xs:element name="key" fixed="codes"/>
+            <xs:element name="dict">
+                <xs:complexType>
+                    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="key" type="xs:positiveInteger"/>
+                        <xs:element ref="string" id="code"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:simpleType name="key">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\S{1,16}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <!-- type polysemy -->
+
+    <xs:element name="string" type="idstring">
+        <xs:alternative test="@id = 'displayname'" type="idstring"/>
+        <xs:alternative test="@id = 'shortname'" type="shortnameidstring"/>
+        <xs:alternative test="@id = 'modality'" type="modality"/>
+        <xs:alternative test="@id = 'cagegory'" type="shortnameidstring"/>
+        <xs:alternative test="@id = 'code'" type="codeidstring"/>
+    </xs:element>
+
+    <xs:complexType name="idstring">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="codeidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:pattern value="\S{1,16}"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="titleidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="shortnameidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:maxLength value="16"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="oididstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:pattern value="[1-2](\d)*(\.0|\.[1-9](\d)*)*"/>
+                <xs:maxLength value="64"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    
+    <xs:simpleType name="oidattribute">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-2](\d)*(\.0|\.[1-9](\d)*)*"/>
+            <xs:maxLength value="64"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="titleattribute">
+        <xs:restriction base="xs:token">
+            <xs:maxLength value="16"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="httpidstring">
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:pattern value="()|(https?://.*)"/>
+                <xs:whiteSpace value="collapse"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="modality">
+        <!-- https://www.dicomlibrary.com/dicom/modality/ -->
+        <!-- http://www.dicom-solutions.com/modalities.php -->
+        <xs:simpleContent>
+            <xs:restriction base="idstring">
+                <xs:enumeration value=""/><!-- no modality -->
+                <xs:enumeration value="AR"/><!-- Autorefraction -->
+                
+<xs:enumeration value="ARCHIVE"/><!-- Archive -->
+                
+                <xs:enumeration value="ASMT"/><!-- Content Assessment Results -->
+                <xs:enumeration value="AU"/><!-- audio -->
+                <xs:enumeration value="BDUS"/><!-- Bone Densitometry (ultrasound) -->
+                <xs:enumeration value="BI"/><!-- Biomagnetic Imaging -->
+                <xs:enumeration value="BMD"/><!-- Bone Densitometry (X-Ray) -->
+
+<xs:enumeration value="CAD"/><!-- Computer Assisted Detection/Diagnosis -->
+<xs:enumeration value="CAPTURE"/><!-- Image Capture -->
+<xs:enumeration value="COMP"/><!-- Computation Server -->
+                
+                <xs:enumeration value="CR"/><!-- Computed Radiography -->
+                <xs:enumeration value="CT"/><!-- Computed Tomography -->
+
+<xs:enumeration value="CTPROTOCOL"/><!-- CT Protocol (Performed) -->
+
+                <xs:enumeration value="DG"/><!-- Diaphanography -->
+                <xs:enumeration value="DOC"/><!-- Document -->
+                
+<xs:enumeration value="DOCD"/><!-- Document Digitizer Equipment-->
+<xs:enumeration value="DSS"/><!-- Department System Scheduler-->
+                
+                <xs:enumeration value="DX"/><!-- Digital Radiography -->
+                <xs:enumeration value="ECG"/><!-- Electrocardiography -->
+                <xs:enumeration value="EPS"/><!-- Cardiac Electrophysiology -->
+                <xs:enumeration value="ES"/><!-- Endoscopy -->
+                <xs:enumeration value="FID"/><!-- Fiducials -->
+
+<xs:enumeration value="FILMD"/><!-- Film Digitizer -->
+
+                <xs:enumeration value="GM"/><!-- General Microscopy -->
+                <xs:enumeration value="HC"/><!-- Hard Copy -->
+                <xs:enumeration value="HD"/><!-- Hemodynamic Waveform -->
+                <xs:enumeration value="IO"/><!-- Intra-Oral Radiography -->
+                <xs:enumeration value="IOL"/><!-- Intraocular Lens Data -->
+                <xs:enumeration value="IVOCT"/><!-- Intravascular Optical Coherence Tomography -->
+                <xs:enumeration value="IVUS"/><!-- Intravascular Ultrasound -->
+                <xs:enumeration value="KER"/><!-- Keratometry -->
+                <xs:enumeration value="KO"/><!-- Key Object Selection -->
+                <xs:enumeration value="LEN"/><!-- Lensometry -->
+
+<xs:enumeration value="LOG"/><!-- Procedure Logging -->
+
+                <xs:enumeration value="LS"/><!-- Laser Surface Scan -->
+                
+<xs:enumeration value="MCD"/><!-- Media Creation Device -->
+<xs:enumeration value="MEDIM"/><!-- Portable Media Importer Equipment -->
+                
+                <xs:enumeration value="MG"/><!-- Mammography -->
+                <xs:enumeration value="MR"/><!-- Magnetic Resonance -->
+                <xs:enumeration value="NM"/><!-- Nuclear Medicine -->
+                <xs:enumeration value="OAM"/><!-- Ophtalmic Axial Measurements -->
+                <xs:enumeration value="OCT"/><!-- Optical Coherence Tomography (Non-Ophtalmic) -->
+                <xs:enumeration value="OP"/><!-- Ophtalmic Photography -->
+                <xs:enumeration value="OPM"/><!-- Ophtalmic Mapping -->
+
+<xs:enumeration value="OPR"/><!-- Ophtalmic Refraction -->
+
+                <xs:enumeration value="OPT"/><!-- Ophtalmic Tomography -->
+                <xs:enumeration value="OPV"/><!-- Ophtalmic Visual Field -->
+                <xs:enumeration value="OSS"/><!-- Optical Surface Scan -->
+                <xs:enumeration value="OT"/><!-- Other -->
+                <xs:enumeration value="PLAN"/><!-- Plan -->
+                <xs:enumeration value="PR"/><!-- Presentation State -->
+
+<xs:enumeration value="PRINT"/><!-- Hard Copy Printer Server -->
+
+                <xs:enumeration value="PT"/><!-- Positron emission tomography (PET) -->
+                <xs:enumeration value="PX"/><!-- Panoramic X-Ray -->
+                <xs:enumeration value="REG"/><!-- Registration -->
+                <xs:enumeration value="RESP"/><!-- Respiratory Waveform -->
+                <xs:enumeration value="RF"/><!-- Radio Fluoroscopy -->
+                <xs:enumeration value="RG"/><!-- Radiographic Imaging (conventional film/screen) -->
+
+                <xs:enumeration value="RT"/><!-- Radiation Therapy Device -->
+
+                <xs:enumeration value="RTDOSE"/><!-- Radiotherapy Dose -->
+                <xs:enumeration value="RTIMAGE"/><!-- Radiotherapy Image -->
+                <xs:enumeration value="RTPLAN"/><!-- Radiotherapy Plan -->
+                <xs:enumeration value="RTRECORD"/><!-- Radiotherapy Treatment Record -->
+                <xs:enumeration value="RTSTRUCT"/><!-- Radiotherapy Structure Set -->
+                <xs:enumeration value="RWV"/><!-- Real World Value Map -->
+                <xs:enumeration value="SEG"/><!-- Segmentation -->
+                <xs:enumeration value="SM"/><!-- Slide Microscopy -->
+                <xs:enumeration value="SMR"/><!-- Stereometric Relationship -->
+                <xs:enumeration value="SR"/><!-- SR Document -->
+                <xs:enumeration value="SRF"/><!-- Subjective Refraction -->
+                <xs:enumeration value="STAIN"/><!-- Automated Slide Stainer -->
+                <xs:enumeration value="TG"/><!-- Thermography -->
+                <xs:enumeration value="US"/><!-- Ultrasound -->
+                <xs:enumeration value="VA"/><!-- Visual Acuity -->
+
+<xs:enumeration value="VIDD"/><!-- Video Tape Digitizer Equipment -->
+<xs:enumeration value="WSD"/><!-- Workstation -->
+
+                <xs:enumeration value="XA"/><!-- X-Ray Angiography -->
+                <xs:enumeration value="XC"/><!-- External-camera Photography -->
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

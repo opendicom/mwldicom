@@ -1,0 +1,2234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist 
+    xmlns="http://www.opendicom.com/xsd/plist/procedure.xsd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.opendicom.com/xsd/plist/procedure.xsd ../procedure.xsd" 
+    version="1.0" 
+    object="procedure" 
+    objectversion="1.0">
+    <dict 
+        oid="1.3.6.1.4.1.23650.152.0.2.738280" 
+        title="IRP"
+        >
+        <key>1</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN SIMPLE</string>
+            <key>shortname</key>
+            <string id="shortname">ABDS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401013</string></dict>
+        </dict>
+        <key>2</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ATM</string>
+            <key>shortname</key>
+            <string id="">ATM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>3</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">BRAZO</string>
+            <key>shortname</key>
+            <string id="">BRA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>4</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CADERA</string>
+            <key>shortname</key>
+            <string id="">CAD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401051</string></dict>
+        </dict>
+        <key>5</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CADERA EXTRA</string>
+            <key>shortname</key>
+            <string id="">CADE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401052</string></dict>
+        </dict>
+        <key>8</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CODO</string>
+            <key>shortname</key>
+            <string id="">COD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>11</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA CERVICAL</string>
+            <key>shortname</key>
+            <string id="">CC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401042</string></dict>
+        </dict>
+        <key>12</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA CERVICAL FUNCIONALES</string>
+            <key>shortname</key>
+            <string id="">CCF</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401044</string></dict>
+        </dict>
+        <key>13</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA CERVICAL OBLICUAS</string>
+            <key>shortname</key>
+            <string id="">CCO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401043</string></dict>
+        </dict>
+        <key>14</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSAL</string>
+            <key>shortname</key>
+            <string id="">CD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401045</string></dict>
+        </dict>
+        <key>15</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSAL OBLICUAS</string>
+            <key>shortname</key>
+            <string id="">CDO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401045</string></dict>
+        </dict>
+        <key>16</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSOLUMBAR</string>
+            <key>shortname</key>
+            <string id="">CDL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401045</string></dict>
+        </dict>
+        <key>18</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA LUMBOSACRA</string>
+            <key>shortname</key>
+            <string id="">CLS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401046</string></dict>
+        </dict>
+        <key>19</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA LUMBOSACRA OBLICUAS</string>
+            <key>shortname</key>
+            <string id="">CLSO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401048</string></dict>
+        </dict>
+        <key>20</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA TOTAL O DORSOLUMBAR PANORAMICA</string>
+            <key>shortname</key>
+            <string id="">CT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401049</string></dict>
+        </dict>
+        <key>22</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COSTILLAS</string>
+            <key>shortname</key>
+            <string id="">COS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>23</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CP</string>
+            <key>shortname</key>
+            <string id="">CP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>24</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CRANEO</string>
+            <key>shortname</key>
+            <string id="">CRA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401032</string></dict>
+        </dict>
+        <key>25</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CRANEO EXTRA</string>
+            <key>shortname</key>
+            <string id="">CRAE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401033</string></dict>
+        </dict>
+        <key>29</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ESTERNON</string>
+            <key>shortname</key>
+            <string id="">EST</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>31</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">FEMUR</string>
+            <key>shortname</key>
+            <string id="">FEM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>32</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">HOMBRO</string>
+            <key>shortname</key>
+            <string id="">HOM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>33</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CAVUM, LARINGE</string>
+            <key>shortname</key>
+            <string id="">CVM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401002</string></dict>
+        </dict>
+        <key>36</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MANO</string>
+            <key>shortname</key>
+            <string id="">MAN</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>37</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MANO EDAD OSEA</string>
+            <key>shortname</key>
+            <string id="">MEO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401056</string></dict>
+        </dict>
+        <key>38</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAXILAR INFERIOR</string>
+            <key>shortname</key>
+            <string id="">MXI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>39</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAXILAR SUPERIOR</string>
+            <key>shortname</key>
+            <string id="">MXS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>40</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MUÑECA</string>
+            <key>shortname</key>
+            <string id="">MUÑ</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>41</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">NARIZ</string>
+            <key>shortname</key>
+            <string id="">NAR</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>42</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">OIDO</string>
+            <key>shortname</key>
+            <string id="">OID</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401035</string></dict>
+        </dict>
+        <key>43</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ORBITA</string>
+            <key>shortname</key>
+            <string id="">ORB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401031</string></dict>
+        </dict>
+        <key>44</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PELVIS</string>
+            <key>shortname</key>
+            <string id="">PEL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401051</string></dict>
+        </dict>
+        <key>45</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIE</string>
+            <key>shortname</key>
+            <string id="">PIE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>48</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIERNA</string>
+            <key>shortname</key>
+            <string id="">PIER</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>49</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PROYECCION ESPECIAL</string>
+            <key>shortname</key>
+            <string id="">PE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401062</string></dict>
+        </dict>
+        <key>50</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RENAL SIMPLE</string>
+            <key>shortname</key>
+            <string id="">RS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401028</string></dict>
+        </dict>
+        <key>51</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">SACROCOXIS</string>
+            <key>shortname</key>
+            <string id="">SC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401053</string></dict>
+        </dict>
+        <key>52</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">SACROILIACAS</string>
+            <key>shortname</key>
+            <string id="">SI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401053</string></dict>
+        </dict>
+        <key>53</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">SILLA TURCA</string>
+            <key>shortname</key>
+            <string id="">ST</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401040</string></dict>
+        </dict>
+        <key>54</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TOBILLO</string>
+            <key>shortname</key>
+            <string id="">TOB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401054</string></dict>
+        </dict>
+        <key>55</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TORAX SIMPLE</string>
+            <key>shortname</key>
+            <string id="">TXS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401009</string></dict>
+        </dict>
+        <key>57</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">VESICAL SIMPLE</string>
+            <key>shortname</key>
+            <string id="">VS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401029</string></dict>
+        </dict>
+        <key>68</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RODILLA</string>
+            <key>shortname</key>
+            <string id="">ROD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>70</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TORAX AP-L</string>
+            <key>shortname</key>
+            <string id="">TXAPL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401070</string></dict>
+        </dict>
+        <key>88</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA LUMBOSACRA FUNCIONALES</string>
+            <key>shortname</key>
+            <string id="">CLSF</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401047</string></dict>
+        </dict>
+        <key>264</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAMOGRAFIAS</string>
+            <key>shortname</key>
+            <string id="">MAMO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Mamografias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401010</string></dict>
+        </dict>
+        <key>344</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">EED NIÑOS</string>
+            <key>shortname</key>
+            <string id="">EED</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Digestivo</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401024</string></dict>
+        </dict>
+        <key>346</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">EDAD OSEA RODILLA</string>
+            <key>shortname</key>
+            <string id="">EOR</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401057</string></dict>
+        </dict>
+        <key>347</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MUÑECA F-L OBLICUA</string>
+            <key>shortname</key>
+            <string id="">MTO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401059</string></dict>
+        </dict>
+        <key>348</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PLACA EXTRA MAMOGRAFIA C/U</string>
+            <key>shortname</key>
+            <string id="">MPE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Mamografias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401130</string></dict>
+        </dict>
+        <key>349</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TUNEL INTERCODILEO</string>
+            <key>shortname</key>
+            <string id="">TI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401063</string></dict>
+        </dict>
+        <key>351</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO DOPPLER COLOR</string>
+            <key>shortname</key>
+            <string id="">EDOC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Doppler</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404019</string></dict>
+        </dict>
+        <key>352</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECOCARDIOGRAMA DOPPLER COLOR</string>
+            <key>shortname</key>
+            <string id="">ECD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecocardiograma</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">1701045</string></dict>
+        </dict>
+        <key>353</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO ABDOMINAL</string>
+            <key>shortname</key>
+            <string id="">EA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404003</string></dict>
+        </dict>
+        <key>354</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO PELVIANA MASCULI</string>
+            <key>shortname</key>
+            <string id="">EPM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404009</string></dict>
+        </dict>
+        <key>355</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO RENAL BILATERAL</string>
+            <key>shortname</key>
+            <string id="">ER</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404010</string></dict>
+        </dict>
+        <key>357</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO TESTICULAR</string>
+            <key>shortname</key>
+            <string id="">ET</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404014</string></dict>
+        </dict>
+        <key>359</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO GINECOLOGICA</string>
+            <key>shortname</key>
+            <string id="">EG</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404006</string></dict>
+        </dict>
+        <key>368</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAMOGRAFIA UNILATERAL</string>
+            <key>shortname</key>
+            <string id="">MAMOU</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Mamografias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401110</string></dict>
+        </dict>
+        <key>369</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIELOGRAFIA</string>
+            <key>shortname</key>
+            <string id="">PIELO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Pielos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401027</string></dict>
+        </dict>
+        <key>370</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CEREBRO</string>
+            <key>shortname</key>
+            <string id="">TC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403001</string></dict>
+        </dict>
+        <key>386</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ENDOSCOPIA DIGESTIVA</string>
+            <key>shortname</key>
+            <string id="">EDA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Endoscopias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">1801001-3</string></dict><!-- no existe en FONASA -->
+        </dict>
+        <key>390</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO TIROIDEA</string>
+            <key>shortname</key>
+            <string id="">ETI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404015</string></dict>
+        </dict>
+        <key>391</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO PARTES BLANDAS</string>
+            <key>shortname</key>
+            <string id="">EPB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404016</string></dict>
+        </dict>
+        <key>393</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO MAMARIA</string>
+            <key>shortname</key>
+            <string id="">EM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404012</string></dict>
+        </dict>
+        <key>395</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CAVIDADES CARDIACAS</string>
+            <key>shortname</key>
+            <string id="">CC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401006</string></dict>
+        </dict>
+        <key>418</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">EXTREMIDADES INFERIORES</string>
+            <key>shortname</key>
+            <string id="">EI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401060</string></dict>
+        </dict>
+        <key>423</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">BIOPSIA</string>
+            <key>shortname</key>
+            <string id="">BPS</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Procedimientos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0801005</string></dict>
+        </dict>
+        <key>426</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TORAX PLACA EXTRA</string>
+            <key>shortname</key>
+            <string id="">TXPE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401004</string></dict>
+        </dict>
+        <key>428</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ESCAFOIDES</string>
+            <key>shortname</key>
+            <string id="">ESC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401058</string></dict>
+        </dict>
+        <key>465</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN SIMPLE PROYECCION COMPLEMENTARIA</string>
+            <key>shortname</key>
+            <string id="">ABDPC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401014</string></dict>
+        </dict>
+        <key>467</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO TRANSVAGINAL</string>
+            <key>shortname</key>
+            <string id="">ETV</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404005</string></dict>
+        </dict>
+        <key>468</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO OBSTETRICA</string>
+            <key>shortname</key>
+            <string id="">EO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404006</string></dict>
+        </dict>
+        <key>469</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PELVIS LACTANTE O MENOR SEIS AÑOS</string>
+            <key>shortname</key>
+            <string id="">PELÑ</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401151</string></dict>
+        </dict>
+        <key>470</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CADERA O COXOFEMORAL LACTANTE O MENOR SEIS AÑOS</string>
+            <key>shortname</key>
+            <string id="">CADÑ</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401151</string></dict>
+        </dict>
+        <key>471</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">DOPPLER GINECOLOGICO</string>
+            <key>shortname</key>
+            <string id="">EDGINE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404019</string></dict>
+        </dict>
+        <key>481</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO PELVIANA FEMENINA</string>
+            <key>shortname</key>
+            <string id="">EPF</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Simples</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404006</string></dict>
+        </dict>
+        <key>485</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO TV OBSTETRICA</string>
+            <key>shortname</key>
+            <string id="">ETVO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Ecos Especiales</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404005</string></dict>
+        </dict>
+        <key>486</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO DOPPLER CAROTIDEO</string>
+            <key>shortname</key>
+            <string id="">EDC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Doppler</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404119</string></dict>
+        </dict>
+        <key>487</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO DOPPLER VASC VEN</string>
+            <key>shortname</key>
+            <string id="">ED</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Doppler</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404118</string></dict>
+        </dict>
+        <key>488</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO DOPPLER ABDOMINAL O VASOS TESTICULAR</string>
+            <key>shortname</key>
+            <string id="">EDVT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Doppler</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404121</string></dict>
+        </dict>
+        <key>489</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ECO DOPPLER VASOS PLACENTARIOS</string>
+            <key>shortname</key>
+            <string id="">EDVP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">US</string>
+            <key>category</key>
+            <string id="category">Doppler</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0404122</string></dict>
+        </dict>
+        <key>490</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CEREBRO</string>
+            <key>shortname</key>
+            <string id="">RMCER</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405001</string></dict>
+        </dict>
+        <key>491</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">SILLA TURCA</string>
+            <key>shortname</key>
+            <string id="">RMST</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405002</string></dict>
+        </dict>
+        <key>492</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ORBITAS</string>
+            <key>shortname</key>
+            <string id="">RMO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405003</string></dict>
+        </dict>
+        <key>493</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAXILOFACIAL</string>
+            <key>shortname</key>
+            <string id="">RNMX</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405003</string></dict>
+        </dict>
+        <key>494</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ART. TEMPOROMANDIBULAR</string>
+            <key>shortname</key>
+            <string id="">RMAT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405004</string></dict>
+        </dict>
+        <key>495</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA CERVICAL</string>
+            <key>shortname</key>
+            <string id="">RMCC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405005</string></dict>
+        </dict>
+        <key>496</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSAL</string>
+            <key>shortname</key>
+            <string id="">RMCD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405006</string></dict>
+        </dict>
+        <key>497</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA LUMBAR</string>
+            <key>shortname</key>
+            <string id="">RMCL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405007</string></dict>
+        </dict>
+        <key>498</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIO CEREBRAL ARTERIAL Y VENOSA</string>
+            <key>shortname</key>
+            <string id="">ANGIORM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405008</string></dict>
+        </dict>
+        <key>499</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN TOTAL</string>
+            <key>shortname</key>
+            <string id="">RNA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405010</string></dict>
+        </dict>
+        <key>500</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PELVIS SOLO OSEA</string>
+            <key>shortname</key>
+            <string id="">RMPEL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405011</string></dict>
+        </dict>
+        <key>501</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN Y PELVIS</string>
+            <key>shortname</key>
+            <string id="">RNAP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405012</string></dict>
+        </dict>
+        <key>502</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLANGIORESONANCIA</string>
+            <key>shortname</key>
+            <string id="">COLANG</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405098</string></dict>
+        </dict>
+        <key>514</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">FOSA POSTERIOR Y/U OIDOS</string>
+            <key>shortname</key>
+            <string id="">FPOST</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405200</string></dict>
+        </dict>
+        <key>515</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CLAVICULA</string>
+            <key>shortname</key>
+            <string id="">CLA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401055</string></dict>
+        </dict>
+        <key>517</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGULO PONTOCEREBELOSO</string>
+            <key>shortname</key>
+            <string id="">RM APC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405200</string></dict>
+        </dict>
+        <key>519</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RM SACROILIACA</string>
+            <key>shortname</key>
+            <string id="">RM SACRO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405200</string></dict>
+        </dict>
+        <key>550</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RNM COL TOTA (C,D,L)</string>
+            <key>shortname</key>
+            <string id="">RM COL TOT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405016</string></dict>
+        </dict>
+        <key>554</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RODILLA UNILATERAL</string>
+            <key>shortname</key>
+            <string id="">RMROD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405013</string></dict>
+        </dict>
+        <key>556</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CUELLO</string>
+            <key>shortname</key>
+            <string id="">RMCU</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>558</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MUSLO</string>
+            <key>shortname</key>
+            <string id="">RMMUSLO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405030</string></dict>
+        </dict>
+        <key>561</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TOBILLO F-L OBLICUA</string>
+            <key>shortname</key>
+            <string id="">TFLO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401059</string></dict>
+        </dict>
+        <key>562</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">HOMBRO</string>
+            <key>shortname</key>
+            <string id="">RMH</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>563</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CODO</string>
+            <key>shortname</key>
+            <string id="">RNCO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405026</string></dict>
+        </dict>
+        <key>564</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIERNA</string>
+            <key>shortname</key>
+            <string id="">RMPIERNA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405029</string></dict>
+        </dict>
+        <key>565</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIE</string>
+            <key>shortname</key>
+            <string id="">RMPIE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405015</string></dict>
+        </dict>
+        <key>566</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">BRAZO</string>
+            <key>shortname</key>
+            <string id="">RNB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>567</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ESCAPULA</string>
+            <key>shortname</key>
+            <string id="">RNE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>568</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANTEBRAZO</string>
+            <key>shortname</key>
+            <string id="">RNA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>569</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MUÑECA</string>
+            <key>shortname</key>
+            <string id="">RNMU</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405024</string></dict>
+        </dict>
+        <key>570</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MANO</string>
+            <key>shortname</key>
+            <string id="">RNMA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405014</string></dict>
+        </dict>
+        <key>571</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TOBILLO</string>
+            <key>shortname</key>
+            <string id="">RMTOB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405015</string></dict>
+        </dict>
+        <key>572</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CADERA</string>
+            <key>shortname</key>
+            <string id="">RMCAD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">4050200</string></dict><!-- no existe en FONASA -->
+        </dict>
+        <key>573</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAMOGRAFIA BILATERAL</string>
+            <key>shortname</key>
+            <string id="">MAMO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Mamografias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401010</string></dict>
+        </dict>
+        <key>574</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">MAMOGRAFIA UNILAT</string>
+            <key>shortname</key>
+            <string id="">MU</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Mamografias</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401110</string></dict>
+        </dict>
+        <key>576</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PROYEC. MAMA</string>
+            <key>shortname</key>
+            <string id="">PM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CR</string>
+            <key>category</key>
+            <string id="category">Rayos</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0401130</string></dict>
+        </dict>
+        <key>578</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">SILLA TURCA</string>
+            <key>shortname</key>
+            <string id="">TST</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403002</string></dict>
+        </dict>
+        <key>579</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGULO PONTOCEREBELO</string>
+            <key>shortname</key>
+            <string id="">TAP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403003</string></dict>
+        </dict>
+        <key>580</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CORTES CORONALES (eliminado por FNS 01-2017)</string>
+            <key>shortname</key>
+            <string id="">TCC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403004</string></dict>
+        </dict>
+        <key>581</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TEMPORAL OIDO</string>
+            <key>shortname</key>
+            <string id="">TTO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403006</string></dict>
+        </dict>
+        <key>582</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ORBITAS MAXILOFACIAL</string>
+            <key>shortname</key>
+            <string id="">TOM</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403007</string></dict>
+        </dict>
+        <key>583</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA CERVICAL</string>
+            <key>shortname</key>
+            <string id="">TCC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403008</string></dict>
+        </dict>
+        <key>584</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSAL O LUM</string>
+            <key>shortname</key>
+            <string id="">TCD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403009</string></dict>
+        </dict>
+        <key>585</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ESP. ADICIONAL (eliminado por FNS 01-2017)</string>
+            <key>shortname</key>
+            <string id="">EA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403010</string></dict>
+        </dict>
+        <key>586</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CUELLO, PARTES BLAN</string>
+            <key>shortname</key>
+            <string id="">TCPB</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403012</string></dict>
+        </dict>
+        <key>587</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">TORAX TOTAL</string>
+            <key>shortname</key>
+            <string id="">TT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403013</string></dict>
+        </dict>
+        <key>588</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN</string>
+            <key>shortname</key>
+            <string id="">TA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403014</string></dict>
+        </dict>
+        <key>589</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PELVIS</string>
+            <key>shortname</key>
+            <string id="">TP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403016</string></dict>
+        </dict>
+        <key>590</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">EXTREMIDADES EST LOC</string>
+            <key>shortname</key>
+            <string id="">TE</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403017</string></dict>
+        </dict>
+        <key>592</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIOTAC CEREBRO</string>
+            <key>shortname</key>
+            <string id="">AG</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403101</string></dict>
+        </dict>
+        <key>593</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIOTAC ABDOMEN</string>
+            <key>shortname</key>
+            <string id="">AA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403103</string></dict>
+        </dict>
+        <key>594</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">PIELOTAC</string>
+            <key>shortname</key>
+            <string id="">PT</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403014</string></dict>
+        </dict>
+        <key>629</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">DENSITOMETRIA OSEA (verif. datos)</string>
+            <key>shortname</key>
+            <string id="">DO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality"/>
+            <key>category</key>
+            <string id="category">Densitometria</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0501134</string></dict>
+        </dict>
+        <key>749</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">CAVIDADES PERINASALE</string>
+            <key>shortname</key>
+            <string id="">TCP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403007</string></dict>
+        </dict>
+        <key>752</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIO TAC CUELLO</string>
+            <key>shortname</key>
+            <string id="">ATC</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403104</string></dict>
+        </dict>
+        <key>761</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA DORSAL</string>
+            <key>shortname</key>
+            <string id="">TCD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403018</string></dict>
+        </dict>
+        <key>762</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">COLUMNA LUMBAR</string>
+            <key>shortname</key>
+            <string id="">TCL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403019</string></dict>
+        </dict>
+        <key>763</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ABDOMEN PELVIS</string>
+            <key>shortname</key>
+            <string id="">TABDPEL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403020</string></dict>
+        </dict>
+        <key>765</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIOTAC PELVIS</string>
+            <key>shortname</key>
+            <string id="">ATP</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">CT</string>
+            <key>category</key>
+            <string id="category">TAC MC 1</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0403105</string></dict>
+        </dict>
+        <key>946</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIORESONANCIA DE CUELLO</string>
+            <key>shortname</key>
+            <string id="">ANCUELLO</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405018</string></dict>
+        </dict>
+        <key>947</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIORESONANCIA ABDOMEN</string>
+            <key>shortname</key>
+            <string id="">ANGIOABD</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405020</string></dict>
+        </dict>
+        <key>950</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIORESONANCIA PELVIS</string>
+            <key>shortname</key>
+            <string id="">AMGIOPEL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405021</string></dict>
+        </dict>
+        <key>951</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIORESONANCIA EXTREMIDAD SUPERIOR UNILATERAL</string>
+            <key>shortname</key>
+            <string id="">ANESUNI</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405022</string></dict>
+        </dict>
+        <key>952</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">ANGIORESONANCIA EXTREMIDAD INFERIOR BILATERAL</string>
+            <key>shortname</key>
+            <string id="">ANEEIIBIL</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405023</string></dict>
+        </dict>
+        <key>953</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RESONANCIA MAGNETICA TORAX</string>
+            <key>shortname</key>
+            <string id="">RMTX</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405009</string></dict>
+        </dict>
+        <key>954</key>
+        <dict>
+            <key>displayname</key>
+            <string id="displayname">RESONANCIA MAGNETICA DE MAMA (BILATERAL)</string>
+            <key>shortname</key>
+            <string id="">RMMAMA</string>
+            <key>scheme</key>
+            <integer>5</integer>
+            <key>modality</key>
+            <string id="modality">MR</string>
+            <key>category</key>
+            <string id="category">Resonancia Magnetica</string>
+            <key>codes</key>
+            <dict><key>4</key><string id="code">0405031</string></dict>
+        </dict>
+    </dict>
+</plist>
